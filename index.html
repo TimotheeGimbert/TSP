@@ -15,20 +15,20 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Page Title">
     <meta name="twitter:description" content="Page description less than 200 characters">
-    <meta name="twitter:image" content="http://www.example.com/image.jpg"> <!-- at least 200x200px -->
+    <meta name="twitter:image" content="#"> <!-- at least 200x200px -->
 
     <link rel="stylesheet" href="css/main.css"/>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <title>Calque v1</title>
+    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+    <title>TSP | The Synthetic Project</title>
   </head>
 
   <body>
     <header>
-      <nav class="navbar sticky-top navbar-dark"> <!-- For Responsive expansion : navbar-expand-md -->
+      <nav class="navbar sticky-top navbar-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="images\logo.png" alt="logo" class="align-text-center">
-            Calque v1
+            TSP | The Synthetic Project
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks">
             <span class="navbar-toggler-icon"></span>
@@ -54,30 +54,32 @@
       </nav>
     </header>
 
-    <div class="container-fluid" id="pageMAIN">
-      <div class="row" id="Row001">
-        <div class="col col-11 col-sm-6" id="colA"><h1>A</h1></div>
-        <div class="col col-5 col-sm-2" id="colB"><h1>B</h1></div>
-        <div class="col col-6 col-sm-3" id="colC"><h1>C</h1></div>
+    <section id="Intro">
+      <div class="container-fluid">
+        <div class="row align-items-center justify-content-around">
+          <div id="Intro__Description" class="col-12 col-md-6 border">
+            <h1>Qu'est ce que le projet 'TSP' ?</h1>
+            <hr>
+            <p>The Synthetic Project est une base de données personnelle en construction. Cette base contient des fiches concepts pour le développement Web.</p>
+            <p>L'objectif initial de cette page est de constituer un exercice 'use-case' accompagnant l'apprentissage auto-didacte des langages pour le développement Full-Stack.</p>
+          </div>
+          <div id="Intro__Carousel" class="col-8 col-md-4">
+            <div class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./images/intro_carousel1.png" class="d-block w-100 mx-auto" alt="TSP01">
+                </div>
+                <div class="carousel-item">
+                  <img src="./images/intro_carousel2.png" class="d-block w-100 mx-auto" alt="TSP02">
+                </div>
+              </div>
+            </div>  
+          </div>
+        </div>
       </div>
-      <div class="row" id="Row002">
-        <div class="col col-3 col-sm-3 col-lg-2" id="col1"><h1>1</h1></div>
-        <div class="col col-3 col-sm-3 col-lg-2" id="col2"><h1>2</h1></div>
-        <div class="col col-3 col-sm-3 col-lg-2" id="col3"><h1>3</h1></div>
-        <div class="col col-3 col-sm-3 col-lg-2" id="col4"><h1>4</h1></div>
-        <div class="col col-3 col-sm-3 col-lg-2" id="col5"><h1>5</h1></div>
-        <div class="col col-3 col-sm-3 col-lg-2" id="col6"><h1>6</h1></div>
-        <div class="col col-3 col-sm-3 col-lg-2" id="col7"><h1>7</h1></div>
-        <div class="col col-3 col-sm-3 col-lg-2" id="col8"><h1>8</h1></div>
-        <div class="col col-3 col-sm-3 col-lg-2" id="col9"><h1>9</h1></div>
-      </div>
-    </div>
-
+    </section>
+    
     <footer>
-      <form class="container-fluid d-flex">
-        <input class="form-control" type="search" placeholder="Type your search here ..." aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>

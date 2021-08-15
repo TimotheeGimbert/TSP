@@ -1,5 +1,5 @@
 // Plots borders on structure's blocks
-@if (true == true) {
+@if (false == true) {
     .container-fluid {
         border: 0.5em inset rgb(211, 74, 74);
         padding: 1%;
@@ -8,7 +8,7 @@
 }
 
 // Columns and rows border multicoloring
-@if (true == true) {
+@if (false == true) {
     .col {
         border-style: solid;
         border-width: 1em;
