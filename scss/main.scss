@@ -1,0 +1,14 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins";
+@import "./base/blocksCUSTOM";
+@import "./components/blocksAlone";
+@import "./layouts/header";
+@import "./layouts/footer";
+@import "./layouts/nav";
+@import "./pages/index";
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
