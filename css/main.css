@@ -13,26 +13,46 @@ header .header__logo img {
   width: 100%;
 }
 header h1 {
-  font-size: 1.5em;
+  font-size: 1.25em;
   margin-left: 4%;
 }
 
+.textbloc {
+  border: 0.15em solid rgba(255, 255, 255, 0.65);
+  border-radius: 3em;
+  padding: 6%;
+}
+.textbloc h1 {
+  font-size: 2em;
+}
+.textbloc hr {
+  margin: 5% 0;
+}
+.textbloc p {
+  margin: 3% 0;
+}
+.textbloc:hover {
+  background-color: rgba(2, 3, 8, 0.541);
+}
+.textbloc img {
+  width: 50%;
+  margin-top: 6%;
+}
+
 .heading {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
+  margin: 1% 0;
+  border: 6px solid rgba(80, 78, 78, 0.356);
 }
 .heading__break {
-  margin-top: 11%;
   width: 100%;
-  height: 60px;
+  height: 51px;
   background-color: rgba(255, 255, 255, 0.548);
 }
 .heading__title {
-  padding: 2%;
+  text-align: center;
   width: 100%;
-  background-color: rgba(41, 38, 38, 0.678);
+  padding: 2% 0;
+  background-color: rgba(2, 3, 8, 0.541);
 }
 
 body {
@@ -50,25 +70,38 @@ body {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: flex-end;
+  margin: 11%;
+  margin-top: 0;
 }
-#Introduction div {
-  border: 0.15em solid rgba(255, 255, 255, 0.65);
-  border-radius: 3em;
-  padding: 6%;
-  margin: 0% 11%;
+#Introduction .textbloc {
+  text-align: end;
 }
-#Introduction div h1 {
-  font-size: 2.2em;
+
+#Synthetics {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
 }
-#Introduction div hr {
-  margin: 3% 0%;
+#Synthetics .textbloc {
+  text-align: center;
+  padding: 1%;
+  margin: 3%;
+  background-color: rgba(2, 3, 8, 0.322);
 }
-#Introduction div p {
-  margin: 3% 0%;
+#Synthetics .textbloc:hover {
+  background-color: rgba(255, 255, 255, 0.548);
+  color: rgba(2, 3, 8, 0.541);
 }
-#Introduction div:hover {
-  background-color: rgba(41, 38, 38, 0.678);
-  border: 0.15em dotted rgba(255, 255, 255, 0.65);
+@media (min-width: 1025px) {
+  #Synthetics .textbloc {
+    width: 25%;
+  }
+}
+@media (max-width: 1024px) {
+  #Synthetics .textbloc {
+    width: 75%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

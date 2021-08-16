@@ -7,21 +7,31 @@ body {
 }
 
 #Introduction {
-    display: flex;    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: flex-end;
-    //border: 0.15em dashed rgba(255, 255, 255, 0.65);       
-    div {
-        border: 0.15em solid rgba(255, 255, 255, 0.65);
-        border-radius: 3em;
-        padding: 6%;
-        margin: 0% 11%;
-        h1 {    font-size: 2.2em;}
-        hr {    margin: 3% 0%;}
-        p {     margin: 3% 0%;}
+    display: flex;    flex-flow: column nowrap;     justify-content: center;     align-items: flex-end;
+    margin: 11%;
+    margin-top: 0;  
+    .textbloc {
+        text-align: end;
+    }     
+}
+
+#Synthetics {
+    display: flex;    flex-flow: row wrap;     justify-content: space-around;     align-items: center;
+    .textbloc {
+        text-align: center;
+        padding: 1%;
+        margin: 3%;
+        background-color: $color-secondary-dark;
         &:hover {
-            background-color: rgba(41, 38, 38, 0.678);
-            border: 0.15em dotted rgba(255, 255, 255, 0.65);
+            background-color: $color-primary-light;
+            color: $color-primary-dark;
         }
-    }
+        
+        @media (min-width: 1025px) {
+            width: 25%;
+        }
+        @media (max-width: 1024px) {
+            width: 75%;
+        }
+    }        
 }
