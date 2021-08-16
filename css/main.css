@@ -77,29 +77,30 @@ body {
   text-align: end;
 }
 
-#Synthetics {
+.synthetics {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 11%;
 }
-#Synthetics .textbloc {
+.synthetics .textbloc {
   text-align: center;
   padding: 1%;
   margin: 3%;
   background-color: rgba(2, 3, 8, 0.322);
 }
-#Synthetics .textbloc:hover {
+.synthetics .textbloc:hover {
   background-color: rgba(255, 255, 255, 0.548);
   color: rgba(2, 3, 8, 0.541);
 }
 @media (min-width: 1025px) {
-  #Synthetics .textbloc {
+  .synthetics .textbloc {
     width: 25%;
   }
 }
 @media (max-width: 1024px) {
-  #Synthetics .textbloc {
+  .synthetics .textbloc {
     width: 75%;
   }
 }

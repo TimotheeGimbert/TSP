@@ -15,8 +15,9 @@ body {
     }     
 }
 
-#Synthetics {
+.synthetics {
     display: flex;    flex-flow: row wrap;     justify-content: space-around;     align-items: center;
+    margin-bottom: 11%;
     .textbloc {
         text-align: center;
         padding: 1%;
