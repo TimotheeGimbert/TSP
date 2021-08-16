@@ -11118,9 +11118,8 @@ header, footer {
 
 nav img {
   display: inline-block;
-  margin-right: 10%;
-  width: 120px;
-  height: 120px;
+  width: 17%;
+  height: 17%;
 }
 nav button {
   margin-right: 2%;
@@ -11129,21 +11128,36 @@ nav button {
 body {
   font-family: "Open Sans", sans-serif;
   color: white;
-  background: url("../images/background.png") no-repeat center center fixed;
+  background: url("../images/background_cut.png") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
-#Intro {
-  margin-top: 5em;
+#Intro #Description {
+  border-radius: 11px;
+  border: 0.15em solid rgba(255, 255, 255, 0.65);
 }
-#Intro__Description {
-  padding: 10em;
+#Intro #Description p {
+  margin-top: 2em;
 }
-#Intro img {
+#Intro #Description:hover {
+  background-color: rgba(41, 38, 38, 0.781);
+  border: 0.15em solid rgba(0, 0, 0, 0);
+}
+#Intro #Deco img {
   max-width: 400px;
+}
+
+#Ancres {
+  margin: 20em 4em;
+}
+#Ancres img {
+  width: 75%;
+}
+#Ancres img:hover {
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */
