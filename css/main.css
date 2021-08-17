@@ -25,6 +25,9 @@ header h1 {
 .textbloc h1 {
   font-size: 2em;
 }
+.textbloc h2 {
+  font-size: 1.25em;
+}
 .textbloc hr {
   margin: 5% 0;
 }
