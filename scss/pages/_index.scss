@@ -1,10 +1,8 @@
 body {
     font-family: 'Open Sans', sans-serif;
     color: $color-text-light;
-    background: url("../images/background_cut.png") no-repeat center center fixed; 
-    -webkit-background-size: cover;    -moz-background-size: cover;    -o-background-size: cover;    background-size: cover;
+    background: url("../images/background_cut.png") no-repeat center center fixed;
 }
-
 a {
     &:link {
         text-decoration: none;
@@ -14,34 +12,64 @@ a {
         color: $color-text-light;
     }
 }
-
-#Introduction {
-    display: flex;    flex-flow: column nowrap;     justify-content: center;     align-items: flex-end;
-    margin: 11%;
-    margin-top: 0;  
-    .textbloc {
-        text-align: end;
-    }     
+.flex-container { border: 3px solid rgb(10, 230, 10);
+    display: flex;
+    flex-flow: row nowrap;
+    
+    .flex-item { border: 3px solid rgb(10, 50, 230);
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+}
+@media (max-width:900px) {
+    .flex-container {
+        flex-direction:  column;
+        .flex-item {
+            width: 100%;
+            text-align: start;
+        }
+    }
 }
 
-.synthetics {
-    display: flex;    flex-flow: row wrap;     justify-content: space-around;     align-items: center;
-    margin-bottom: 11%;
-    .textbloc {
-        text-align: center;
-        padding: 1%;
-        margin: 3%;
-        background-color: $color-secondary-dark;
-        &:hover {
-            background-color: $color-primary-light;
+.synthetic {  //border: 1px solid white;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;  
+    align-items: center;
+    width: 80%;
+    max-width: 600px;
+    padding: 3% 6%;
+    gap: 11%;
+    background-color: $color-secondary-dark;
+    border-radius: 30px;
+
+    &__picture { 
+        img {
+            width: 111px;
+        }
+    }
+    &__content {
+        h1 {
+            font-size: 1.8em;
+        }
+        h2 {
+            font-size: 1.2em;
             color: $color-primary-dark;
         }
-        
-        @media (min-width: 1025px) {
-            width: 25%;
+        p {
+            font-size: 0.8em;
+            color: $color-primary-dark; 
         }
-        @media (max-width: 1024px) {
-            width: 75%;
+    }
+
+    &:hover {
+        background-color: $color-text-light;
+        h1 {
+            color: $color-primary-dark; 
         }
-    }        
+    }
 }

@@ -7,104 +7,116 @@
     <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans'>
     <title>TSP | The Synthetic Project</title>
   </head>
-
-  <body>
-
+  <body>   
     <header>
-        <div class="header__logo">
-          <img src="images\logo.png" alt="logo">
-        </div>
-        <h1>The Synthetic Project</h1>
+      <div class="header__logo">
+        <img src="images\logo.png" alt="logo">
+      </div>
+      <h1>The Synthetic Project</h1>
     </header>
 
-    <section id="Introduction">
-      <div class="textbloc">
-        <h1>Le Projet Synthetic, c'est quoi ?</h1>
-        <hr>
-        <p>C'est un projet Web personnel prenant la forme d'une base de données relatives à la programmation informatique.</p>
-        <p>Constituée de fiches Synthetic, cette base essayera de faire la synthèse des concepts clés du développement Web.</p>
-      </div>
-    </section>
+    <section class="flex-container">
 
-    <section class="heading">
-      <div class="heading__break">
+      <div class="flex-item">
+
+        <div class="synthetic synthetic--left">
+          <div class="synthetic__picture">
+            <img src="images/logo_html.png" alt="logo HTML">
+          </div>
+          <div class="synthetic__content" href="#">
+            <h1>HTML</h1>
+            <h2>Architecture web</h2>
+            <hr>  
+            <p>Structure du Document Object Model</p> 
+          </div>  
+        </div>
+        <div class="synthetic synthetic--left">
+          <div class="synthetic__picture">
+            <img src="images/logo_css.png" alt="logo CSS">
+          </div>
+          <div class="synthetic__content" href="#">
+            <h1>CSS</h1>
+            <h2>Mise en page et style</h2>
+            <hr>  
+            <p>Positionner et styliser les éléments</p>
+          </div>  
+        </div>
+        <div class="synthetic synthetic--left">
+          <div class="synthetic__picture">
+            <img src="images/logo_javascript.png" alt="logo JS">
+          </div>
+          <div class="synthetic__content" href="#">
+            <h1>JavaScript</h1>
+            <h2>Dynamisation de l'environnement</h2>
+            <hr>  
+            <p>Etablir des interactions avec le DOM</p>
+          </div>  
+        </div>
       </div>
-      <div class="heading__title">
+
+      <div class="flex-item">
+
+        <div class="synthetic synthetic--right">
+          <div class="synthetic__picture">
+            <img src="images/logo_boostrap.png" alt="logo bootstrap">
+          </div>
+          <div class="synthetic__content" href="#">
+            <h1>Bootstrap</h1>
+            <h2>Framework HTML</h2>
+            <hr>  
+            <p>Pour des mises en page responsive</p>
+          </div>  
+        </div>
+        <div class="synthetic synthetic--right">
+          <div class="synthetic__picture">
+            <img src="images/logo_sass.png" alt="logo sass">
+          </div>
+          <div class="synthetic__content" href="#">
+            <h1>Sass</h1>
+            <h2>Préprocesseur CSS</h2>
+            <hr>  
+            <p>Structure l'utilisation du CSS</p>
+          </div>  
+        </div>
+        <div class="synthetic synthetic--right">
+          <div class="synthetic__picture">
+            <img src="images/logo_react.png" alt="logo react">
+          </div>
+          <div class="synthetic__content" href="#">
+            <h1>React</h1>
+            <h2>Framework JavaScript</h2>
+            <hr>
+            <p>Interagir avec le DOM</p>
+          </div>  
+        </div>
+      </div>
+
+    </section> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    <div class="heading">
         <h1>Les 3 piliers du Front-End</h1>
         <hr>
         <p>HTML -|- CSS -|- JavaScript</p>
-      </div>
-    </section>
-    
-    <section class="synthetics">
-      <a class="textbloc" href="#">
-        <div>
-          <img src="images/logo_html.png" alt="logo HTML">
-        </div>
-        <h1>HTML</h1>
-        <h2>Architecture d'une page web</h2>
-        <hr>
-        <p>Définir la structure du Document Object Model</p> 
-      </a>
-      <a class="textbloc" href="#">
-        <div>
-          <img src="images/logo_css.png" alt="logo HTML">
-        </div>
-        <h1>CSS</h1>
-        <h2>Mise en page et style</h2>
-        <hr>
-        <p>Positionner et styliser les éléments</p>
-      </a>
-      <a class="textbloc" href="#">
-        <div>
-          <img src="images/logo_javascript.png" alt="logo HTML">
-        </div>
-        <h1>JavaScript</h1>
-        <h2>Dynamisation de l'environnement</h2>
-        <hr>
-        <p>Etablir des interactions avec le DOM</p>
-      </a>
-    </section>
-
-    <section class="heading">
-      <div class="heading__break">
-      </div>
-      <div class="heading__title">
-        <h1>Les frameworks Front-End</h1>
-        <hr>
-        <p>Bootstrap -|- Sass -|- React</p>
-      </div>
-    </section>
-
-    <section class="synthetics">
-      <a class="textbloc" href="#">
-        <div>
-          <img src="images/logo_boostrap.png" alt="logo HTML">
-        </div>
-        <h1>Bootstrap</h1>
-        <h2>Framework HTML</h2>
-        <hr>
-        <p>Pour des mises en page responsive</p> 
-      </a>
-      <a class="textbloc" href="#">
-        <div>
-          <img src="images/logo_sass.png" alt="logo HTML">
-        </div>
-        <h1>Sass</h1>
-        <h2>Préprocesseur CSS</h2>
-        <hr>
-        <p>Structure l'utilisation du CSS</p>
-      </a>
-      <a class="textbloc" href="#">
-        <div>
-          <img src="images/logo_react.png" alt="logo HTML">
-        </div>
-        <h1>React</h1>
-        <h2>Framework JavaScript</h2>
-        <hr>
-        <p>Interagir avec le DOM</p>
-      </a>
-    </section>
+    </div>
     
   </body>
 </html>
