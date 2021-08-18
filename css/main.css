@@ -17,75 +17,66 @@ header h1 {
   margin-left: 4%;
 }
 
+* {
+  box-sizing: border-box;
+}
+* h1 {
+  font-size: 1.8em;
+}
+* h2 {
+  font-size: 1.2em;
+  color: rgba(2, 3, 8, 0.541);
+}
+* p {
+  font-size: 0.8em;
+  color: rgba(2, 3, 8, 0.541);
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   color: white;
   background: url("../images/background_cut.png") no-repeat center center fixed;
 }
 
-a:link {
-  text-decoration: none;
-  color: white;
+#Content {
+  display: flex;
+  flex-wrap: wrap;
 }
-a:visited {
-  color: white;
+#Content section {
+  border: 1px dashed white;
+  flex: 100%;
 }
-
-.flex-container {
-  border: 3px solid #0ae60a;
+#Content section .synthetic {
   display: flex;
   flex-flow: row nowrap;
-}
-.flex-container .flex-item {
-  border: 3px solid #0a32e6;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 30px;
-}
-
-@media (max-width: 900px) {
-  .flex-container {
-    flex-direction: column;
-  }
-  .flex-container .flex-item {
-    width: 100%;
-    text-align: start;
-  }
-}
-.synthetic {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: center;
-  width: 80%;
-  max-width: 600px;
   padding: 3% 6%;
-  gap: 11%;
+  text-align: end;
   background-color: rgba(2, 3, 8, 0.322);
   border-radius: 30px;
 }
-.synthetic__picture img {
-  width: 111px;
+#Content section .synthetic__picture img {
+  width: 150px;
 }
-.synthetic__content h1 {
-  font-size: 1.8em;
-}
-.synthetic__content h2 {
-  font-size: 1.2em;
-  color: rgba(2, 3, 8, 0.541);
-}
-.synthetic__content p {
-  font-size: 0.8em;
-  color: rgba(2, 3, 8, 0.541);
-}
-.synthetic:hover {
+#Content section .synthetic:hover {
   background-color: white;
 }
-.synthetic:hover h1 {
+#Content section .synthetic:hover h1 {
   color: rgba(2, 3, 8, 0.541);
+}
+
+@media (min-width: 800px) {
+  .synthetic {
+    width: 44%;
+    margin: 6% 22%;
+  }
+}
+@media (max-width: 799px) {
+  .synthetic {
+    width: 90%;
+    margin: 22% 3%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
