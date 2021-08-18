@@ -1,21 +1,13 @@
-* {
-    box-sizing: border-box;
-    h1 {
-        font-size: 1.8em;
-    }
-    h2 {
-        font-size: 1.2em;
-        color: $color-primary-dark;
-    }
-    p {
-        font-size: 0.8em;
-        color: $color-primary-dark; 
-    }
-  }
-body {
-    font-family: 'Open Sans', sans-serif;
-    color: $color-text-light;
-    background: url("../images/background_cut.png") no-repeat center center fixed;
+
+#Intro {
+    display: flex;    
+    flex-flow: column nowrap;     
+    justify-content: center;     
+    align-items: flex-end;
+    .infoblock {
+        @include white-block();
+        padding: 6% 11%; 
+    }     
 }
 
 #Content {
@@ -24,36 +16,24 @@ body {
 
     section { border: 1px dashed rgb(255, 255, 255);
         flex: 100%;
-        
+        display: flex;    flex-flow: column nowrap;     justify-content: center;
         .synthetic {
             display: flex;
             flex-flow: row nowrap;
             justify-content: space-between;
             align-items: center;
-
-            
-            padding: 3% 6%;
-            text-align: end;
-            background-color: $color-secondary-dark;
-            border-radius: 30px;
-            
+            align-self: center;
+            @include white-hover();  
             &__picture {
                 img {
                     width: 150px;
-                }
-            }
-
-            &:hover {
-                background-color: $color-text-light;
-                h1 {
-                    color: $color-primary-dark; 
                 }
             }
         }
     }
 }
 
-@media (min-width: 800px) {
+/* @media (min-width: 800px) {
     .synthetic {
         width: 44%;
         margin: 6% 22%;
@@ -65,4 +45,4 @@ body {
         width: 90%;
         margin: 22% 3%;
     }
-}
+} */

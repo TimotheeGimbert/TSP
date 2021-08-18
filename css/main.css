@@ -1,3 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+* h1 {
+  font-size: 1.8em;
+}
+* h2 {
+  font-size: 1.2em;
+}
+* p {
+  font-size: 0.8em;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: url("../images/background_cut.png") no-repeat center center fixed;
+}
+
 header {
   display: flex;
   flex-flow: row nowrap;
@@ -14,28 +32,23 @@ header .header__logo img {
 }
 header h1 {
   font-size: 1.25em;
+  color: white;
   margin-left: 4%;
 }
 
-* {
-  box-sizing: border-box;
+#Intro {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-end;
 }
-* h1 {
-  font-size: 1.8em;
-}
-* h2 {
-  font-size: 1.2em;
-  color: rgba(2, 3, 8, 0.541);
-}
-* p {
-  font-size: 0.8em;
-  color: rgba(2, 3, 8, 0.541);
-}
-
-body {
-  font-family: "Open Sans", sans-serif;
-  color: white;
-  background: url("../images/background_cut.png") no-repeat center center fixed;
+#Intro .infoblock {
+  text-align: end;
+  border-radius: 30px;
+  padding: 3% 6%;
+  background-color: rgba(255, 255, 255, 0.459);
+  color: rgba(63, 60, 60, 0.924);
+  padding: 6% 11%;
 }
 
 #Content {
@@ -45,38 +58,52 @@ body {
 #Content section {
   border: 1px dashed white;
   flex: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
 }
 #Content section .synthetic {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  padding: 3% 6%;
-  text-align: end;
-  background-color: rgba(2, 3, 8, 0.322);
+  align-self: center;
   border-radius: 30px;
+  padding: 3% 6%;
+  background-color: rgba(2, 3, 8, 0.541);
+  text-align: end;
 }
-#Content section .synthetic__picture img {
-  width: 150px;
+#Content section .synthetic h1 {
+  color: white;
+}
+#Content section .synthetic h2, #Content section .synthetic p {
+  color: rgba(255, 255, 255, 0.74);
 }
 #Content section .synthetic:hover {
   background-color: white;
 }
 #Content section .synthetic:hover h1 {
-  color: rgba(2, 3, 8, 0.541);
+  color: rgba(63, 60, 60, 0.924);
+}
+#Content section .synthetic:hover h2, #Content section .synthetic:hover p {
+  color: rgba(92, 87, 87, 0.924);
+}
+#Content section .synthetic__picture img {
+  width: 150px;
 }
 
-@media (min-width: 800px) {
-  .synthetic {
-    width: 44%;
-    margin: 6% 22%;
-  }
+/* @media (min-width: 800px) {
+    .synthetic {
+        width: 44%;
+        margin: 6% 22%;
+    }
 }
+
 @media (max-width: 799px) {
-  .synthetic {
-    width: 90%;
-    margin: 22% 3%;
-  }
-}
+    .synthetic {
+        width: 90%;
+        margin: 22% 3%;
+    }
+} */
 
 /*# sourceMappingURL=main.css.map */
