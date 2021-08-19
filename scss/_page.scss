@@ -8,8 +8,10 @@ section {
 }
 
 a {
-    text-decoration: unset;
     &:hover {
         color: white;  
     }
+    &:link {text-decoration: none;}
+    &:visited {text-decoration: none;}
+    &:active {text-decoration: none;}
 }

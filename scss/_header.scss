@@ -1,18 +1,31 @@
 header { 
-    display: flex;                              
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 4%;
-
-    .header__logo { 
-        width: 20%;
-        max-width: 133px;
-        img {width: 100%;}
+    a {
+        img {
+            margin-right: 33%;
+            font-size: 1.25em;
+            color: white;
+        }
+        margin: 3% 6%;
     }
-    h1 { 
-        font-size: 1.25em;
-        color: white;
-        margin-left: 4%;
+
+    .bg-light {
+        background-color: transparent !important;
+        a { 
+            color: white; 
+            &:hover {
+                color: $txt-white;
+                font-size: 125%;
+            }
+            &:link {text-decoration: none;}
+            &:visited {text-decoration: none; color: $txt-light;}
+            &:active {text-decoration: none;}
+        }
+    }
+    
+    button {
+        margin-right: 6%;
+    }
+    .nav-item {
+        margin-bottom: 2%;
     }
 }

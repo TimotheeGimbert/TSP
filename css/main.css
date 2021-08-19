@@ -10,24 +10,39 @@ p {
   font-size: 0.8em;
 }
 
-header {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 4%;
+header a {
+  margin: 3% 6%;
 }
-header .header__logo {
-  width: 20%;
-  max-width: 133px;
-}
-header .header__logo img {
-  width: 100%;
-}
-header h1 {
+header a img {
+  margin-right: 33%;
   font-size: 1.25em;
   color: white;
-  margin-left: 4%;
+}
+header .bg-light {
+  background-color: transparent !important;
+}
+header .bg-light a {
+  color: white;
+}
+header .bg-light a:hover {
+  color: white;
+  font-size: 125%;
+}
+header .bg-light a:link {
+  text-decoration: none;
+}
+header .bg-light a:visited {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.74);
+}
+header .bg-light a:active {
+  text-decoration: none;
+}
+header button {
+  margin-right: 6%;
+}
+header .nav-item {
+  margin-bottom: 2%;
 }
 
 body {
@@ -39,11 +54,17 @@ section {
   margin: 11% 0;
 }
 
-a {
-  text-decoration: unset;
-}
 a:hover {
   color: white;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
 }
 
 .bulle {
