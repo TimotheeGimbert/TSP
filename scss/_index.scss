@@ -1,5 +1,6 @@
 .bulle {
     @include bulle();
+    margin-bottom: 11%;
 }
  
 .synthetic { 
@@ -8,6 +9,9 @@
 
     &__logo {
         border: 1px dashed white;
+        width: 30%;
+        max-width: 150px;
+        img {width: 100%;}
     }
     &__txt {
         border: 1px dashed white;

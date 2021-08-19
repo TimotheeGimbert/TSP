@@ -36,12 +36,18 @@ body {
   background: url("../images/background_cut.png") no-repeat center center fixed;
 }
 
+section {
+  margin-bottom: 3%;
+}
+
 .bulle {
   border-radius: 30px;
   background-color: transparent;
   border: 2px solid white;
   color: rgba(255, 255, 255, 0.74);
-  text-align: center;
+  text-align: right;
+  padding: 6%;
+  margin-bottom: 11%;
 }
 .bulle h1 {
   color: white;
@@ -58,11 +64,13 @@ body {
 .synthetic h2, .synthetic p {
   color: rgba(255, 255, 255, 0.74);
 }
-.synthetic img {
-  width: 150px;
-}
 .synthetic__logo {
   border: 1px dashed white;
+  width: 30%;
+  max-width: 150px;
+}
+.synthetic__logo img {
+  width: 100%;
 }
 .synthetic__txt {
   border: 1px dashed white;

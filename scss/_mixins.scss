@@ -4,7 +4,8 @@
     border: 2px solid white;
     h1 { color : $txt-white; }
     color: $txt-light;
-    text-align: center;
+    text-align: right;
+    padding: 6%;
 }
 @mixin bulle-sizing() {
 
@@ -20,11 +21,7 @@
     h1 { color: $txt-white;}
     h2, p { color: $txt-light;}
 }
-@mixin synthetic-sizing() {
 
-    img { width: 150px; } 
-}
 @mixin synthetic() {
     @include synthetic-style();
-    @include synthetic-sizing();
 }  
