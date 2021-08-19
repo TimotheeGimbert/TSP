@@ -1,21 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-* h1 {
-  font-size: 1.8em;
-}
-* h2 {
-  font-size: 1.2em;
-}
-* p {
-  font-size: 0.8em;
-}
-
-body {
-  font-family: "Open Sans", sans-serif;
-  background: url("../images/background_cut.png") no-repeat center center fixed;
-}
-
 header {
   display: flex;
   flex-flow: row nowrap;
@@ -39,92 +21,54 @@ header h1 {
 * {
   box-sizing: border-box;
 }
-
-.page-container {
-  display: flex;
-  flex-wrap: wrap;
+* h1 {
+  font-size: 1.8em;
 }
-.page-container section {
-  flex: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 1%;
+* h2 {
+  font-size: 1.2em;
+}
+* p {
+  font-size: 0.8em;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: url("../images/background_cut.png") no-repeat center center fixed;
 }
 
 .bulle {
   border-radius: 30px;
-  background-color: rgba(255, 255, 255, 0.459);
-  color: rgba(63, 60, 60, 0.924);
+  background-color: transparent;
+  border: 2px solid white;
+  color: rgba(255, 255, 255, 0.74);
   text-align: center;
-  margin: 6% 11% 11% 33%;
 }
-.bulle--info {
-  border-radius: 30px;
-  background-color: rgba(255, 255, 255, 0.459);
-  color: rgba(63, 60, 60, 0.924);
-  text-align: center;
-  margin: 6% 11% 11% 33%;
-  text-align: end;
-  padding: 5% 11%;
+.bulle h1 {
+  color: white;
 }
 
 .synthetic {
   border-radius: 30px;
   background-color: rgba(2, 3, 8, 0.541);
-  flex: 100%;
+  border: 2px solid white;
 }
 .synthetic h1 {
   color: white;
 }
 .synthetic h2, .synthetic p {
   color: rgba(255, 255, 255, 0.74);
-  margin: 0%;
 }
 .synthetic img {
   width: 150px;
 }
-.synthetic--left {
-  border-radius: 30px;
-  background-color: rgba(2, 3, 8, 0.541);
-  flex: 100%;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-}
-.synthetic--left h1 {
-  color: white;
-}
-.synthetic--left h2, .synthetic--left p {
-  color: rgba(255, 255, 255, 0.74);
-  margin: 0%;
-}
-.synthetic--left img {
-  width: 150px;
-}
-.synthetic--right {
-  border-radius: 30px;
-  background-color: rgba(2, 3, 8, 0.541);
-  flex: 100%;
-  display: flex;
-  flex-flow: row-reverse nowrap;
-  justify-content: center;
-}
-.synthetic--right h1 {
-  color: white;
-}
-.synthetic--right h2, .synthetic--right p {
-  color: rgba(255, 255, 255, 0.74);
-  margin: 0%;
-}
-.synthetic--right img {
-  width: 150px;
-}
 .synthetic__logo {
-  border: 1px solid white;
+  border: 1px dashed white;
 }
 .synthetic__txt {
-  border: 1px solid white;
+  border: 1px dashed white;
+}
+.synthetic__txt * {
+  border: 1px dashed grey;
 }
 
 /*# sourceMappingURL=main.css.map */

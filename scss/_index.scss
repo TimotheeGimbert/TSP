@@ -1,31 +1,18 @@
 .bulle {
     @include bulle();
-    &--info {
-        @include bulle();
-        text-align: end;
-        padding: 5% 11%;
-    }
 }
  
 .synthetic { 
     @include synthetic();
-    &--left {
-        @include synthetic();
-        //margin-left: 11%; // TAILLE DES SYNTHETICS DECOULE DU MARGIN
-        //margin-right: 33%;
-        display: flex; flex-flow: row nowrap; justify-content: center; align-items: center;
-    }
-    &--right {
-        @include synthetic();
-        //margin-left: 33%; // TAILLE DES SYNTHETICS DECOULE DU MARGIN
-        //margin-right: 11%;
-        display: flex; flex-flow: row-reverse nowrap; justify-content: center; 
-    }
-    
+    border: 2px solid white;
+
     &__logo {
-        border: 1px solid white;
+        border: 1px dashed white;
     }
     &__txt {
-        border: 1px solid white;
+        border: 1px dashed white;
+        * {
+            border: 1px dashed grey;
+        }
     }
 }

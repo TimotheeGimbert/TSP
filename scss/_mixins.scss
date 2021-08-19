@@ -1,28 +1,30 @@
+@mixin bulle-style() {
+    border-radius: 30px;
+    background-color: transparent;
+    border: 2px solid white;
+    h1 { color : $txt-white; }
+    color: $txt-light;
+    text-align: center;
+}
+@mixin bulle-sizing() {
+
+}
 @mixin bulle() {
     @include bulle-style();
     @include bulle-sizing();
 }
-    @mixin bulle-style() {
-        border-radius: 30px;
-        background-color: $bg-light;
-        color: $txt-dark;
-        text-align: center;
-    }
-    @mixin bulle-sizing() {
-        margin: 6% 11% 11% 33%; // TAILLE DES BULLES DECOULE DU MARGIN
-    }
 
+@mixin synthetic-style() {
+    border-radius: 30px;  
+    background-color: $bg-dark;
+    h1 { color: $txt-white;}
+    h2, p { color: $txt-light;}
+}
+@mixin synthetic-sizing() {
+
+    img { width: 150px; } 
+}
 @mixin synthetic() {
     @include synthetic-style();
     @include synthetic-sizing();
 }  
-    @mixin synthetic-style() {
-        border-radius: 30px;  
-        background-color: $bg-dark;
-        h1 { color: $txt-white;}
-        h2, p { color: $txt-light; margin: 0%; }
-    }
-    @mixin synthetic-sizing() {
-        flex: 100%;
-        img { width: 150px; } 
-    }
