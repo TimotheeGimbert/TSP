@@ -12,4 +12,9 @@
 }  
 .synthetic {
     @include synthetic();
+
+    &:hover {
+        @include synthetic--hover;
+    }
 }
+

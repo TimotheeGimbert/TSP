@@ -16,8 +16,23 @@
 @mixin synthetic-style() {
     border-radius: 30px;  
     background-color: $bg-dark;
-    h1 { color: $txt-white;}
-    h2, p { color: $txt-light;}
-    img {max-width: 120px;} 
     padding: 4%;
+    h1, h2 { 
+        color: $txt-white;
+        padding-bottom: 1%; 
+    }
+    p { 
+        color: $txt-light;
+        padding-bottom: 1%; 
+    }
+    img {max-width: 120px;} 
+}
+@mixin synthetic--hover() {
+    background-color: white;
+    h1, h2 {
+        color: $txt-dark;
+    }
+    p { 
+        color: $bg-dark;
+    }
 }

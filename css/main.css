@@ -56,14 +56,25 @@ section {
   background-color: rgba(2, 3, 8, 0.541);
   padding: 4%;
 }
-.synthetic h1 {
+.synthetic h1, .synthetic h2 {
   color: white;
+  padding-bottom: 1%;
 }
-.synthetic h2, .synthetic p {
+.synthetic p {
   color: rgba(255, 255, 255, 0.74);
+  padding-bottom: 1%;
 }
 .synthetic img {
   max-width: 120px;
+}
+.synthetic:hover {
+  background-color: white;
+}
+.synthetic:hover h1, .synthetic:hover h2 {
+  color: rgba(63, 60, 60, 0.924);
+}
+.synthetic:hover p {
+  color: rgba(2, 3, 8, 0.541);
 }
 
 /*# sourceMappingURL=main.css.map */
