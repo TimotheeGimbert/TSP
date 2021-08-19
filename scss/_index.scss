@@ -1,22 +1,15 @@
+@mixin bulle() {
+    @include bulle-style();
+    @include bulle-sizing();
+}
 .bulle {
     @include bulle();
-    margin-bottom: 11%;
+    
 }
- 
-.synthetic { 
-    @include synthetic();
-    border: 2px solid white;
 
-    &__logo {
-        border: 1px dashed white;
-        width: 30%;
-        max-width: 150px;
-        img {width: 100%;}
-    }
-    &__txt {
-        border: 1px dashed white;
-        * {
-            border: 1px dashed grey;
-        }
-    }
+@mixin synthetic() {
+    @include synthetic-style();
+}  
+.synthetic {
+    @include synthetic();
 }

@@ -1,18 +1,16 @@
 @mixin bulle-style() {
     border-radius: 30px;
     background-color: transparent;
-    border: 2px solid white;
-    h1 { color : $txt-white; }
     color: $txt-light;
-    text-align: right;
     padding: 6%;
+    border: 2px solid white;
+    h1 { 
+        color : $txt-white;
+        text-align: right; 
+    } 
 }
 @mixin bulle-sizing() {
-
-}
-@mixin bulle() {
-    @include bulle-style();
-    @include bulle-sizing();
+    //margin-bottom: 0%;
 }
 
 @mixin synthetic-style() {
@@ -20,8 +18,6 @@
     background-color: $bg-dark;
     h1 { color: $txt-white;}
     h2, p { color: $txt-light;}
+    img {max-width: 120px;} 
+    padding: 4%;
 }
-
-@mixin synthetic() {
-    @include synthetic-style();
-}  
