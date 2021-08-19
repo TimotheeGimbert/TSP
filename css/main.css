@@ -7,7 +7,7 @@ h2 {
 }
 
 p {
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 
 header {
@@ -54,7 +54,7 @@ section {
 .synthetic {
   border-radius: 30px;
   background-color: rgba(2, 3, 8, 0.541);
-  padding: 4%;
+  padding: 3%;
 }
 .synthetic h1, .synthetic h2 {
   color: white;
