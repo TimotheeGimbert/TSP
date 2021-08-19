@@ -1,18 +1,9 @@
-@mixin bulle() {
-    @include bulle-style();
-    @include bulle-sizing();
-}
 .bulle {
-    @include bulle();
-    
+    @include bulle();  
 }
 
-@mixin synthetic() {
-    @include synthetic-style();
-}  
 .synthetic {
     @include synthetic();
-
     &:hover {
         @include synthetic--hover;
     }

@@ -7,7 +7,7 @@ h2 {
 }
 
 p {
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 
 header {
@@ -36,7 +36,14 @@ body {
 }
 
 section {
-  margin-bottom: 11%;
+  margin: 11% 0;
+}
+
+a {
+  text-decoration: unset;
+}
+a:hover {
+  color: white;
 }
 
 .bulle {
@@ -45,10 +52,10 @@ section {
   color: rgba(255, 255, 255, 0.74);
   padding: 6%;
   border: 2px solid white;
+  text-align: right;
 }
 .bulle h1 {
   color: white;
-  text-align: right;
 }
 
 .synthetic {
@@ -62,7 +69,6 @@ section {
 }
 .synthetic p {
   color: rgba(255, 255, 255, 0.74);
-  padding-bottom: 1%;
 }
 .synthetic img {
   max-width: 120px;

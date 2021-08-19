@@ -1,19 +1,22 @@
-@mixin bulle-style() {
+@mixin bulle() {
     border-radius: 30px;
     background-color: transparent;
     color: $txt-light;
     padding: 6%;
     border: 2px solid white;
+    text-align: right;
     h1 { 
-        color : $txt-white;
-        text-align: right; 
+        color : $txt-white; 
     } 
 }
-@mixin bulle-sizing() {
-    //margin-bottom: 0%;
+
+@mixin synthetic--hover() {
+    background-color: white;
+    h1, h2 { color: $txt-dark; }
+    p { color: $bg-dark; }
 }
 
-@mixin synthetic-style() {
+@mixin synthetic() {
     border-radius: 30px;  
     background-color: $bg-dark;
     padding: 3%;
@@ -21,18 +24,6 @@
         color: $txt-white;
         padding-bottom: 1%; 
     }
-    p { 
-        color: $txt-light;
-        padding-bottom: 1%; 
-    }
-    img {max-width: 120px;} 
-}
-@mixin synthetic--hover() {
-    background-color: white;
-    h1, h2 {
-        color: $txt-dark;
-    }
-    p { 
-        color: $bg-dark;
-    }
-}
+    p { color: $txt-light; }
+    img { max-width: 120px; } 
+}  
