@@ -1,7 +1,6 @@
-@import "./utils/variables";
-@import "./utils/functions";
-@import "./utils/mixins";
-@import "./layouts/initialRendering";
-@import "./layouts/header-footer";
-@import "./components/components";
-@import "./pages/index";
+@import "./variables";
+@import "./functions";
+@import "./mixins";
+@import "./header";
+@import "./page";
+@import "./index";
