@@ -1,31 +1,40 @@
 header { 
-    a {
-        img {
-            margin-right: 33%;
-            font-size: 1.25em;
-            color: white;
-        }
-        margin: 3% 6% 6% 6%;
+    margin-bottom: 5%;
+
+    img {
+        margin-right: 22%;
+        font-size: 1.25em;
+        color: white;
     }
+
+    button {
+        margin-right: 5%;
+     }
 
     .bg-light {
         background-color: transparent !important;
-        a { 
-            color: white; 
-            &:hover {
-                color: $txt-white;
-                font-size: 125%;
-            }
+        a {
             &:link {text-decoration: none;}
             &:visited {text-decoration: none; color: $txt-light;}
             &:active {text-decoration: none;}
+            margin: 4%;
+            color: $txt-light; 
+            &:hover {
+                color: $txt-white;
+                font-size: 135%;
+            }
+        }
+        .item-dot {
+            color: white;
+            font-size: 2em;
         }
     }
     
-    button {
-        margin-right: 6%;
-    }
-    .nav-item {
-        margin-bottom: 2%;
+    #navList {
+        font-size: 0.9em;
+        margin-bottom: 11%;
+        .nav-item {
+            margin-bottom: 1.5%;
+        }
     }
 }

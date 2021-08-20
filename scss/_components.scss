@@ -1,0 +1,17 @@
+a {
+    &:link { text-decoration: none; }
+    &:visited { text-decoration: none; }
+    &:active { text-decoration: none; }
+    &:hover { color: white; }
+}
+
+.bulle {
+    @include bulle();  
+}
+
+.synthetic {
+    @include synthetic();
+    &:hover {
+        @include synthetic--hover;
+    }
+}

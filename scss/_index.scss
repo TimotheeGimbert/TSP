@@ -1,11 +1,21 @@
-.bulle {
-    @include bulle();  
-}
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: url("../images/background_cut.png") repeat-y center center fixed;
+    background-size: auto;
 
-.synthetic {
-    @include synthetic();
-    &:hover {
-        @include synthetic--hover;
+    > div {
+        margin-bottom: 33%; // create space end of page
+
+        > section {
+            margin: 6% 0; // create space between synthetic sections
+
+            .bulle {
+                margin-bottom: 6%; // create space below introduction
+            }
+        }
     }
 }
+
+
+
 
