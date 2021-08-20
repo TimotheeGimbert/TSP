@@ -23,15 +23,25 @@
     border-radius: 30px;  
     background-color: $bg-dark;
     padding: 3%;
+    img { 
+        width: 30%; 
+    }
     h1, h2 { 
         color: $txt-white;
         padding-bottom: 1%; 
     }
-    p { color: $txt-light; }
-    img { max-width: 120px; } 
+    p { 
+        color: $txt-light; 
+    } 
     &:hover {
         background-color: white;
-        h1, h2 { color: $txt-dark; }
-        p { color: $bg-dark; }
+        h1, h2 { 
+            color: $txt-dark; 
+        }
+        p { 
+            color: $bg-dark; 
+        }
     }
+    
+    
 }

@@ -47,15 +47,15 @@ a:active {
   background-color: rgba(2, 3, 8, 0.541);
   padding: 3%;
 }
+.synthetic img {
+  width: 30%;
+}
 .synthetic h1, .synthetic h2 {
   color: white;
   padding-bottom: 1%;
 }
 .synthetic p {
   color: rgba(255, 255, 255, 0.74);
-}
-.synthetic img {
-  max-width: 120px;
 }
 .synthetic:hover {
   background-color: white;
