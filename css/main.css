@@ -6,6 +6,10 @@ h2 {
   font-size: 1.2em;
 }
 
+h3 {
+  font-size: 1em;
+}
+
 p {
   font-size: 0.8em;
 }
@@ -23,6 +27,10 @@ a:active {
   text-decoration: none !important;
 }
 
+.construction {
+  margin-bottom: 50%;
+}
+
 .bulle {
   border: 2px solid white;
   border-radius: 30px;
@@ -37,7 +45,7 @@ a:active {
 .bulle:hover {
   color: white;
 }
-.bulle hr {
+.bulle hr, .bulle h1 {
   margin-top: 3%;
   margin-bottom: 3%;
 }
@@ -56,6 +64,7 @@ a:active {
 }
 .synthetic p {
   color: rgba(255, 255, 255, 0.74);
+  margin-bottom: 0;
 }
 .synthetic:hover {
   background-color: white;
@@ -67,33 +76,33 @@ a:active {
   color: rgba(2, 3, 8, 0.541);
 }
 
-header img {
+header img, footer img {
   margin-right: 22%;
   font-size: 1.25em;
   color: white;
 }
-header button {
+header button, footer button {
   margin-right: 5%;
 }
-header a {
+header a, footer a {
   margin: 4%;
 }
-header a:hover {
+header a:hover, footer a:hover {
   color: white;
   font-size: 135%;
 }
-header .bg-light {
+header .bg-light, footer .bg-light {
   background-color: transparent !important;
 }
-header .bg-light .item-dot {
+header .bg-light .item-dot, footer .bg-light .item-dot {
   color: white;
   font-size: 2em;
 }
-header #navList {
+header #navList, footer #navList {
   font-size: 0.9em;
   margin-bottom: 11%;
 }
-header #navList .nav-item {
+header #navList .nav-item, footer #navList .nav-item {
   margin-bottom: 1%;
 }
 
