@@ -23,6 +23,9 @@ body {
         &:hover {
             color: $txt-light;
         }
+        a {
+            color: black;
+        }
     }
     .carte {
         background-color: transparent;
