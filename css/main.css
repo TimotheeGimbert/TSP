@@ -10,28 +10,31 @@ p {
   font-size: 0.8em;
 }
 
+a {
+  color: rgba(255, 255, 255, 0.74);
+}
 a:link {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 a:visited {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 a:active {
-  text-decoration: none;
-}
-a:hover {
-  color: white;
+  text-decoration: none !important;
 }
 
 .bulle {
+  border: 2px solid white;
   border-radius: 30px;
   background-color: transparent;
+  text-align: right;
   color: rgba(255, 255, 255, 0.74);
   padding: 6%;
-  border: 2px solid white;
-  text-align: right;
 }
 .bulle h1 {
+  color: white;
+}
+.bulle:hover {
   color: white;
 }
 
@@ -60,9 +63,6 @@ a:hover {
   color: rgba(2, 3, 8, 0.541);
 }
 
-header {
-  margin-bottom: 5%;
-}
 header img {
   margin-right: 22%;
   font-size: 1.25em;
@@ -71,26 +71,15 @@ header img {
 header button {
   margin-right: 5%;
 }
-header .bg-light {
-  background-color: transparent !important;
-}
-header .bg-light a {
+header a {
   margin: 4%;
-  color: rgba(255, 255, 255, 0.74);
 }
-header .bg-light a:link {
-  text-decoration: none;
-}
-header .bg-light a:visited {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.74);
-}
-header .bg-light a:active {
-  text-decoration: none;
-}
-header .bg-light a:hover {
+header a:hover {
   color: white;
   font-size: 135%;
+}
+header .bg-light {
+  background-color: transparent !important;
 }
 header .bg-light .item-dot {
   color: white;
@@ -101,7 +90,7 @@ header #navList {
   margin-bottom: 11%;
 }
 header #navList .nav-item {
-  margin-bottom: 1.5%;
+  margin-bottom: 1%;
 }
 
 body {
@@ -109,14 +98,40 @@ body {
   background: url("../images/background_cut.png") repeat-y center center fixed;
   background-size: auto;
 }
-body > div {
-  margin-bottom: 33%;
+
+#Intro {
+  padding-top: 3%;
+  margin-bottom: 11%;
 }
-body > div > section {
-  margin: 6% 0;
+
+#Synthetics > a {
+  margin-top: 6%;
 }
-body > div > section .bulle {
-  margin-bottom: 6%;
+
+#Contact {
+  margin-top: 11%;
+  margin-bottom: 11%;
+  padding-top: 11%;
+}
+#Contact .bulle:hover {
+  color: rgba(255, 255, 255, 0.74);
+}
+#Contact .carte {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 30px;
+  color: rgba(255, 255, 255, 0.74);
+  text-align: center;
+  padding: 2%;
+}
+#Contact .carte h3 {
+  font-size: 1.3em;
+  color: white;
+}
+#Contact .carte img {
+  width: 50%;
+  border-radius: 30px;
+  margin: 11%;
 }
 
 /*# sourceMappingURL=main.css.map */

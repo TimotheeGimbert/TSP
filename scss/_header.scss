@@ -1,40 +1,31 @@
 header { 
-    margin-bottom: 5%;
-
     img {
         margin-right: 22%;
         font-size: 1.25em;
-        color: white;
+        color: $txt-white;
     }
-
     button {
         margin-right: 5%;
-     }
-
-    .bg-light {
-        background-color: transparent !important;
-        a {
-            &:link {text-decoration: none;}
-            &:visited {text-decoration: none; color: $txt-light;}
-            &:active {text-decoration: none;}
-            margin: 4%;
-            color: $txt-light; 
-            &:hover {
-                color: $txt-white;
-                font-size: 135%;
-            }
+    }
+    a {
+        margin: 4%; // defines the header area 
+        &:hover {
+            color: $txt-white;
+            font-size: 135%;
         }
+    }
+    .bg-light {
+        background-color: transparent !important;   
         .item-dot {
             color: white;
             font-size: 2em;
         }
-    }
-    
+    } 
     #navList {
         font-size: 0.9em;
         margin-bottom: 11%;
         .nav-item {
-            margin-bottom: 1.5%;
+            margin-bottom: 1%;
         }
     }
 }

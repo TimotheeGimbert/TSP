@@ -2,17 +2,41 @@ body {
     font-family: 'Open Sans', sans-serif;
     background: url("../images/background_cut.png") repeat-y center center fixed;
     background-size: auto;
+}
 
-    > div {
-        margin-bottom: 33%; // create space end of page
+#Intro {
+    padding-top: 3%;
+    margin-bottom: 11%;
+}
 
-        > section {
-            margin: 6% 0; // create space between synthetic sections
+#Synthetics {
+    > a {
+        margin-top: 6%; // vertical spacing of .synthetics 
+    }
+}
 
-            .bulle {
-                margin-bottom: 6%; // create space below introduction
-            }
+#Contact {
+    margin-top: 11%;
+    margin-bottom: 11%;
+    padding-top: 11%;
+    .bulle {
+        &:hover {
+            color: $txt-light;
         }
+    }
+    .carte {
+        background-color: transparent;
+        border: 2px solid white;
+        border-radius: 30px;
+        color: $txt-light;
+        text-align: center;
+        padding: 2%;
+        h3 {font-size: 1.3em; color: white;}
+        img {
+            width: 50%; 
+            border-radius: 30px;
+            margin: 11%;
+        }       
     }
 }
 

@@ -6,53 +6,54 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css"/>
     <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans'>
-    <title>TSP | The Synthetic Project</title>
+    <title>TSP | The Simple Project</title>
   </head>
 
   <body>
     
-    <header class="container-fluid">
-        <nav class="navbar navbar-dark bg-light">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-              <img src="images\logo.png" width="120" height="120" alt="logo">The Synthetic Project
-            </a> 
-            <button class="navbar-toggler p-3" type="button" data-bs-toggle="collapse" data-bs-target="#navList" aria-controls="navList" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-        </nav>
-                    <div class="collapse navbar-collapse" id="navList">
-                      <ul class="navbar-nav bg-light text-center">
-                        <li class="nav-item"> <a href="#Intro">Accueil</a></li>
-                        <li class="nav-item item-dot"> &middot;</li>
-                        <li class="nav-item"> <a href="#Html">HTML | Structurer une page Web</a></li>
-                        <li class="nav-item"> <a href="#Css">CSS | Styliser une page Web</a></li> 
-                        <li class="nav-item"> <a href="#Css">Sass | Préprocesseur CSS</a></li>
-                        <li class="nav-item item-dot"> &middot;</li>           
-                        <li class="nav-item"> <a href="#Bootstrap">Bootstrap | Framework Front-End</a></li>
-                        <li class="nav-item"> <a href="#Js">JavaScript | Dynamiser une page Web</a></li>
-                        <li class="nav-item"> <a href="#Js">React JS |  Framework JavaScript</a></li>
-                        <li class="nav-item item-dot"> &middot;</li>
-                        <li class="nav-item"> <a href="#Html">info / contact</a></li>
-                      </ul> 
-                    </div>
+    <header>
+      <nav class="navbar navbar-dark bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="images\logo.png" width="120" height="120" alt="logo">The Simple Project
+          </a> 
+          <button class="navbar-toggler p-3" type="button" data-bs-toggle="collapse" data-bs-target="#navList" aria-controls="navList" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+      <div class="collapse navbar-collapse" id="navList">
+        <ul class="navbar-nav bg-light text-center">
+          <li class="nav-item"> <a href="#Intro">Accueil</a></li>
+          <li class="nav-item item-dot"> &middot;</li>
+          <li class="nav-item"> <a href="">HTML | Structurer une page Web</a></li>
+          <li class="nav-item"> <a href="">CSS | Styliser une page Web</a></li> 
+          <li class="nav-item"> <a href="">Sass | Préprocesseur CSS</a></li>
+          <li class="nav-item item-dot"> &middot;</li>           
+          <li class="nav-item"> <a href="">Bootstrap | Framework Front-End</a></li>
+          <li class="nav-item"> <a href="">JavaScript | Dynamiser une page Web</a></li>
+          <li class="nav-item"> <a href="">React JS |  Framework JavaScript</a></li>
+          <li class="nav-item item-dot"> &middot;</li>
+          <li class="nav-item"> <a href="#Contact">Infos / Contact</a></li>
+        </ul> 
+      </div>
     </header>
     
     <div class="container-fluid">
 
       <section id="Intro" class="row">
-        <a class="bulle offset-1 col-10 offset-lg-4 col-lg-7 mt-lg-4" href="#Html">
-          <h1>Le Projet Synthetic c'est ...</h1>
+        <a class="bulle offset-1 col-10 offset-lg-4 col-lg-7 " href="#Synthetics">
+          <h1>Le Projet Simple c'est ...</h1>
           <hr>
-          <p>... le partage des connaissances en développement Web Front-End d'un apprenti-développeur.</p>
+          <p>... de partager des connaissances en développement Web Front-End d'un apprenti-développeur.</p>
           <p>Par des fiches de synthèse, le projet tentera d'aller à l'essence des concepts clés du développement Web moderne.</p> 
           <p>Cette base de données est en construction et très expérimentale car c'est avant tout pour moi un exercice sous la forme d'un cas concret :-] </p>
         </a>
       </section>
     
-      <section id="Html" class="row">
-        <a class="synthetic offset-1 col-10 col-lg-6" href="#Intro">
+      <section id="Synthetics" class="row">
+
+        <a class="synthetic offset-1 col-10 col-lg-6" href="#">
           <div class="row align-items-center justify-content-center">
             <div class="synthetic__logo offset-1 col-5 col-lg-5">
               <img src="images/logo_html.png" alt="logo HTML" class="img-fluid">
@@ -65,10 +66,7 @@
           </div>  
         </a>
 
-      </section>
-
-      <section id="Css" class="row">
-        <div class="synthetic offset-1 col-10 offset-lg-5 col-lg-6">
+        <a class="synthetic offset-1 col-10 col-lg-6 offset-lg-5 " href="#">
           <div class="row align-items-center justify-content-center">
             <div class="synthetic__logo offset-1 col-5 col-lg-5">
               <img src="images/logo_css.png" alt="logo CSS" class="img-fluid">
@@ -79,11 +77,9 @@
               <p>Styliser une page Web</p>
             </div>
           </div>  
-        </div>
-      </section>  
-      
-      <section id="Sass" class="row">
-        <div class="synthetic offset-1 col-10 col-lg-6">
+        </a>
+ 
+        <a class="synthetic offset-1 col-10 col-lg-6" href="#">
           <div class="row align-items-center justify-content-center">
             <div class="synthetic__logo offset-1 col-5 col-lg-5">
               <img src="images/logo_sass.png" alt="logo sass" class="img-fluid">
@@ -94,11 +90,9 @@
               <p>Préprocesseur CSS</p>
             </div>  
           </div>
-        </div>
-      </section>
+        </a>
 
-      <section id="Bootstrap" class="row">
-        <div class="synthetic offset-1 col-10 offset-lg-5 col-lg-6">
+        <a class="synthetic offset-1 col-10 col-lg-6 offset-lg-5 " href="#">
           <div class="row align-items-center justify-content-center">
             <div class="synthetic__logo offset-1 col-5 col-lg-5">
               <img src="images/logo_boostrap.png" alt="logo bootstrap" class="img-fluid">
@@ -109,37 +103,53 @@
               <p>Mise en page responsive</p>
             </div>  
           </div>
-        </div>
-      </section>
+        </a>
 
-      <section id="Js" class="row">
-        <div class="synthetic offset-1 col-10 col-lg-6">
+        <a class="synthetic offset-1 col-10 col-lg-6" href="#">
           <div class="row align-items-center justify-content-center">
             <div class="synthetic__logo offset-1 col-5 col-lg-5">
               <img src="images/logo_javascript.png" alt="logo JS" class="img-fluid">
             </div>
             <div class="synthetic__txt col-6 col-lg-5">
               <h1>JavaScript</h1>
-              <h2>Intéragir avec le DOM</h2>
+              <h2>Object-Oriented Language</h2>
               <p>Dynamiser une page Web</p>
             </div>
           </div>  
-        </div>
-      </section>
+        </a>
 
-      <section id="React" class="row">
-        <div class="synthetic offset-1 col-10 offset-lg-5 col-lg-6">
+        <a class="synthetic offset-1 col-10 col-lg-6 offset-lg-5" href="#">
           <div class="row align-items-center justify-content-center">
             <div class="synthetic__logo offset-1 col-5 col-lg-5">
               <img src="images/logo_react.png" alt="logo react" class="img-fluid">
             </div>
             <div class="synthetic__txt col-6 col-lg-5">
               <h1>React</h1>
-              <h2>Framework JavaScript</h2>
+              <h2>JavaScript Library</h2>
               <p>Front-End dynamique</p>
             </div>
           </div>
-        </div>  
+        </a>
+
+      </section>
+
+      <section id="Contact" class="row align-items-center">
+        <div class="bulle offset-1 col-10 offset-lg-1 col-lg-7">
+          <h1>Et l'apprenti-développeur ...</h1>
+          <hr>
+          <p>... s'appelle Timothée, vit près de Bordeaux, et se prépare à suivre une formation de développement Web Full-Stack.</p>
+          <hr>
+          <p>Le code source de ce site web est disponible sur GitHub : </p>
+          <p>Vous pouvez me retrouver sur Discord : </p>
+          <p>Vous pouvez me contacter par email : gimbert2021@free.fr</p>
+          <p>Et vous pouvez également me retrouver sur LinkedIn : </p>
+        </div>
+        <div class="carte offset-3 col-6 gy-5 offset-lg-1 col-lg-2 gy-lg-0">
+          <img src="./images/profilePicMini.jpg" alt="profile picture">
+          <h2>Timothée</h2>
+          <h3>Développeur Junior</h3>
+          <p>Auto-didacte</p>
+        </div>
       </section>
 
     </div> 
