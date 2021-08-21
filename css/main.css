@@ -13,10 +13,10 @@ body {
     font-size: 1.4em;
   }
   body h3 {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
   body p {
-    font-size: 1em;
+    font-size: 0.8em;
   }
 }
 @media (min-width: 992px) {
@@ -122,11 +122,20 @@ header .bg-light .item-dot {
   font-size: 2em;
 }
 header #navList {
-  font-size: 0.9em;
   margin-bottom: 11%;
 }
 header #navList .nav-item {
   margin-bottom: 1%;
+}
+@media (min-width: 992px) {
+  header #navList .nav-item {
+    font-size: 0.9em;
+  }
+}
+@media (max-width: 992px) {
+  header #navList .nav-item {
+    font-size: 1.2em;
+  }
 }
 
 footer img {
