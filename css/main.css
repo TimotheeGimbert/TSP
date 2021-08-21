@@ -4,7 +4,7 @@ body {
 }
 @media (max-width: 993px) {
   body {
-    background: url("../images/background_phone.png") repeat-y center top fixed;
+    background: url("../images/background.png") repeat-y center top fixed;
   }
   body h1 {
     font-size: 1.8em;
