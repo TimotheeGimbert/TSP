@@ -54,17 +54,6 @@ a:active {
   margin-bottom: 50%;
 }
 
-.arrow {
-  border: solid #c21212;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
-}
-
-.up {
-  transform: rotate(-135deg);
-}
-
 .bulle {
   border: 2px solid white;
   border-radius: 30px;
@@ -142,6 +131,7 @@ header #navList .nav-item {
 
 footer img {
   width: 50%;
+  margin-bottom: 200px;
 }
 
 #Intro {
