@@ -1,44 +1,74 @@
-$header-padding: 4%;
+$header-padding: 110px; // IT CURRENTLY CHANGES THE LOGO SIZE ALSO : see below line 11 img width = $header-padding
 
-header { 
-    padding: $header-padding;
-    .navbar-brand {
-        font-size: 1.4em;
-    }
+header {
+    display: flex;
+    justify-content: space-between;
     a {
+        padding: $header-padding;
+        display: flex;
+        align-items: center;
+        img {
+            width: $header-padding;
+            margin-right: $header-padding;
+        }
+        h1 {
+            color: $txt-light;
+            font-size: 20px;
+            span {
+                color: $txt-white;
+                font-size: 40px;
+            }
+        }
+        &:hover {
+            h1 {
+                color: $txt-white;
+                span {
+                    color: $txt-light;
+                }
+            }
+        }
+    }
+
+    button {
+        padding: $header-padding;
+        background-color: transparent;
+        border-color: transparent;
+        img {
+            width: $header-padding/2;
+        } 
+        &:hover {
+            h3 {
+            color: $txt-white;
+            }
+        }      
+    }    
+}
+
+nav {
+    margin-bottom: $header-padding;
+    text-align: center;
+    color: $txt-light;
+    li {
+        font-size: 18px;
+        margin-bottom: 20px;
         &:hover {
             color: $txt-white;
-            font-size: 1.6em;
-        }
-        img {
-            margin-right: 22%;
-        }
-    }
-
-    .bg-light {
-        background-color: transparent !important;   
-        .item-dot {
-            color: white;
-            font-size: 2em;
-        }
-    } 
-    #navList {
-        margin-bottom: 11%;
-        .nav-item {
-            margin-bottom: 1%;
-            @media (min-width: 992px) {
-                font-size: 0.9em;
-            }
-            @media (max-width: 992px) {
-                font-size: 1.2em;
-            }
         }
     }
 }
 
 footer {
-    img {
-        width: 50%;
-        margin-bottom: 200px;
+    a {
+        padding: 50px;
+        background-color: transparent;
+        border-color: transparent; 
+        img {
+            width: 110px;
+        } 
+        &:hover {
+            h3 {
+            color: $txt-white;
+            }
+        }  
     }
 }

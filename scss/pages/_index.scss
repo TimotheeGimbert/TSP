@@ -1,7 +1,14 @@
 #Intro {
-    padding-top: 0%;
-    margin-top: 6%;
+    //padding-top: 0%;
+    margin-top: 3%;
     margin-bottom: 6%;
+    a {
+        &:hover {
+            p {
+                color: $txt-white;
+            }
+        }
+    }
 }
 
 #Synthetics {
@@ -17,11 +24,9 @@
     .bulle {
         text-align: center;
         &:hover {
-            color: $txt-light;
-        }
-        a {
-            color: white;
-            font-size: 1.2em;
+            span {
+                color: white;
+            }
         }
     }
     .carte {

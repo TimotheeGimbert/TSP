@@ -1,4 +1,8 @@
 body {
+    height: 100%;
+    margin: 0;
+
+    background-color: $bg-dark;
     background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.0)), url("../images/background_pc.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -16,31 +20,18 @@ body {
         h3 { font-size: 1.1em; }
         p { font-size: 1em; }   
     }
-
-    a {
-        &:link {text-decoration: none !important;}
-        &:visited {text-decoration: none !important;}
-        &:active {text-decoration: none !important;}
-        color: $txt-light;
-        &:hover {
-            h1, h2, h3, hr, p {
-            color: $txt-white;
-            }
-        } 
-    }
 }
 
-.construction {
-    margin-bottom: 50%;
+a { 
+    color: inherit !important;
+    &:link {text-decoration: none !important;}
+    &:visited {text-decoration: none !important;}
+    &:active {text-decoration: none !important;}
 }
-
-
 
 $border-radius : 30px;
-
 $bulle-hr-margin : 3% 0%;
 $bulle-padding : 6%;
-
 $synthetic-padding : 3%;
 $synthetic-img-width: 30%;
 $synthetic-txt-margin: 6%;
@@ -53,6 +44,9 @@ $synthetic-txt-margin: 6%;
     h1, hr { 
         margin: $bulle-hr-margin; 
     }  
+    h3 {
+        color: $txt-white;
+    }
 }
 
 .synthetic {
