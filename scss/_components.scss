@@ -8,8 +8,13 @@ body {
     font-family: 'Open Sans', sans-serif;
     h1 { font-size: 1.6em; }
     h2 { font-size: 1.2em; }
-    h3 { font-size: 0.9em; }
-    p { font-size: 0.8em; }     
+    h3 { font-size: 1em; }
+    p { font-size: 0.8em; }  
+
+    @media (max-width: $breakpoint) {
+        h3 { font-size: 1.1em; }
+        p { font-size: 1em; }   
+    }
 }
 
 @include a-neutralize();

@@ -1,19 +1,20 @@
+$header-padding: 4%;
+
 header { 
-    img {
-        margin-right: 22%;
-        font-size: 1.25em;
-        color: $txt-white;
-    }
-    button {
-        margin-right: 5%;
+    padding: $header-padding;
+    .navbar-brand {
+        font-size: 1.4em;
     }
     a {
-        margin: 4%; // defines the header area 
         &:hover {
             color: $txt-white;
-            font-size: 135%;
+            font-size: 1.6em;
+        }
+        img {
+            margin-right: 22%;
         }
     }
+
     .bg-light {
         background-color: transparent !important;   
         .item-dot {

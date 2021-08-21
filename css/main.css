@@ -13,10 +13,18 @@ body h2 {
   font-size: 1.2em;
 }
 body h3 {
-  font-size: 0.9em;
+  font-size: 1em;
 }
 body p {
   font-size: 0.8em;
+}
+@media (max-width: 600px) {
+  body h3 {
+    font-size: 1.1em;
+  }
+  body p {
+    font-size: 1em;
+  }
 }
 
 a {
@@ -81,20 +89,18 @@ a:active {
   color: rgba(2, 3, 8, 0.541);
 }
 
-header img {
-  margin-right: 22%;
-  font-size: 1.25em;
-  color: white;
+header {
+  padding: 4%;
 }
-header button {
-  margin-right: 5%;
-}
-header a {
-  margin: 4%;
+header .navbar-brand {
+  font-size: 1.4em;
 }
 header a:hover {
   color: white;
-  font-size: 135%;
+  font-size: 1.6em;
+}
+header a img {
+  margin-right: 22%;
 }
 header .bg-light {
   background-color: transparent !important;
@@ -127,7 +133,8 @@ footer img {
 
 #Intro {
   padding-top: 0%;
-  margin-bottom: 3%;
+  margin-top: 6%;
+  margin-bottom: 6%;
 }
 
 #Synthetics > a {
