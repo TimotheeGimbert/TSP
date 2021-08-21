@@ -1,17 +1,40 @@
-h1 {
-  font-size: 1.6em;
+body {
+  font-family: "Open Sans", sans-serif;
+  background-size: cover;
 }
-
-h2 {
-  font-size: 1.2em;
+@media (max-width: 993px) {
+  body {
+    background: url("../images/background_phone.png") repeat-y center top fixed;
+  }
+  body h1 {
+    font-size: 1.8em;
+  }
+  body h2 {
+    font-size: 1.4em;
+  }
+  body h3 {
+    font-size: 1.2em;
+  }
+  body p {
+    font-size: 1em;
+  }
 }
-
-h3 {
-  font-size: 1em;
-}
-
-p {
-  font-size: 0.8em;
+@media (min-width: 992px) {
+  body {
+    background: url("../images/background_cut.png") no-repeat center center fixed;
+  }
+  body h1 {
+    font-size: 1.6em;
+  }
+  body h2 {
+    font-size: 1.2em;
+  }
+  body h3 {
+    font-size: 1em;
+  }
+  body p {
+    font-size: 0.8em;
+  }
 }
 
 a {
@@ -31,11 +54,22 @@ a:active {
   margin-bottom: 50%;
 }
 
+.arrow {
+  border: solid #c21212;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.up {
+  transform: rotate(-135deg);
+}
+
 .bulle {
   border: 2px solid white;
   border-radius: 30px;
   background-color: transparent;
-  text-align: right;
+  text-align: left;
   color: rgba(255, 255, 255, 0.74);
   padding: 6%;
 }
@@ -76,40 +110,38 @@ a:active {
   color: rgba(2, 3, 8, 0.541);
 }
 
-header img, footer img {
+header img {
   margin-right: 22%;
   font-size: 1.25em;
   color: white;
 }
-header button, footer button {
+header button {
   margin-right: 5%;
 }
-header a, footer a {
+header a {
   margin: 4%;
 }
-header a:hover, footer a:hover {
+header a:hover {
   color: white;
   font-size: 135%;
 }
-header .bg-light, footer .bg-light {
+header .bg-light {
   background-color: transparent !important;
 }
-header .bg-light .item-dot, footer .bg-light .item-dot {
+header .bg-light .item-dot {
   color: white;
   font-size: 2em;
 }
-header #navList, footer #navList {
+header #navList {
   font-size: 0.9em;
   margin-bottom: 11%;
 }
-header #navList .nav-item, footer #navList .nav-item {
+header #navList .nav-item {
   margin-bottom: 1%;
 }
 
-body {
-  font-family: "Open Sans", sans-serif;
-  background: url("../images/background_cut.png") repeat-y center center fixed;
-  background-size: auto;
+footer img {
+  width: 50%;
 }
 
 #Intro {
@@ -125,6 +157,9 @@ body {
   margin-top: 11%;
   margin-bottom: 11%;
   padding-top: 11%;
+}
+#Contact .bulle {
+  text-align: center;
 }
 #Contact .bulle:hover {
   color: rgba(255, 255, 255, 0.74);

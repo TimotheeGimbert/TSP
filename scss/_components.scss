@@ -1,13 +1,42 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    @media (max-width: 993px) {
+        background: url("../images/background_phone.png") repeat-y center top fixed;
+        h1 { font-size: 1.8em; }
+        h2 { font-size: 1.4em; }
+        h3 { font-size: 1.2em; }
+        p { font-size: 1em; }
+    }
+    @media (min-width: 992px) {
+        background: url("../images/background_cut.png") no-repeat center center fixed;
+        h1 { font-size: 1.6em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1em; }
+        p { font-size: 0.8em; }  
+    }
+    background-size: cover;
+}
+
 @include a-neutralize();
 .construction {
     margin-bottom: 50%;
 }
 
+.arrow {
+    border: solid rgb(194, 18, 18);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+.up {
+    transform: rotate(-135deg);
+  }
+
 .bulle {
     border: 2px solid white;
     border-radius: 30px;
     background-color: transparent;
-    text-align: right;
+    text-align: left;
     color: $txt-light;
     padding: 6%;
     h1 { 

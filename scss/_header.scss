@@ -1,4 +1,4 @@
-header, footer { 
+header { 
     img {
         margin-right: 22%;
         font-size: 1.25em;
@@ -27,5 +27,11 @@ header, footer {
         .nav-item {
             margin-bottom: 1%;
         }
+    }
+}
+
+footer {
+    img {
+        width: 50%;
     }
 }

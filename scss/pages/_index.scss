@@ -1,9 +1,3 @@
-body {
-    font-family: 'Open Sans', sans-serif;
-    background: url("../images/background_cut.png") repeat-y center center fixed;
-    background-size: auto;
-}
-
 #Intro {
     padding-top: 0%;
     margin-bottom: 11%;
@@ -20,6 +14,7 @@ body {
     margin-bottom: 11%;
     padding-top: 11%;
     .bulle {
+        text-align: center;
         &:hover {
             color: $txt-light;
         }
