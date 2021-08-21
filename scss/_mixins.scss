@@ -1,8 +1,0 @@
-@mixin a-neutralize() {
-    a {
-        &:link {text-decoration: none !important;}
-        &:visited {text-decoration: none !important;}
-        &:active {text-decoration: none !important;}
-        color: $txt-light;
-    }
-}
