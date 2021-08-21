@@ -1,21 +1,15 @@
 body {
-    font-family: 'Open Sans', sans-serif;
+    background-image: url("../images/background_pc.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 
-    @media (max-width: 993px) {
-        background: url("../images/background_phone2.png") repeat-y center top fixed;
-        h1 { font-size: 1.8em; }
-        h2 { font-size: 1.4em; }
-        h3 { font-size: 1.1em; }
-        p { font-size: 0.8em; }
-    }
-    @media (min-width: 992px) {
-        background: url("../images/background_pc.png") no-repeat center center fixed;
-        h1 { font-size: 1.6em; }
-        h2 { font-size: 1.2em; }
-        h3 { font-size: 0.9em; }
-        p { font-size: 0.8em; }  
-    }
-    
+    font-family: 'Open Sans', sans-serif;
+    h1 { font-size: 1.6em; }
+    h2 { font-size: 1.2em; }
+    h3 { font-size: 0.9em; }
+    p { font-size: 0.8em; }     
 }
 
 @include a-neutralize();

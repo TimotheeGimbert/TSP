@@ -1,39 +1,22 @@
 body {
+  background-image: url("../images/background_pc.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
   font-family: "Open Sans", sans-serif;
 }
-@media (max-width: 993px) {
-  body {
-    background: url("../images/background_phone2.png") repeat-y center top fixed;
-  }
-  body h1 {
-    font-size: 1.8em;
-  }
-  body h2 {
-    font-size: 1.4em;
-  }
-  body h3 {
-    font-size: 1.1em;
-  }
-  body p {
-    font-size: 0.8em;
-  }
+body h1 {
+  font-size: 1.6em;
 }
-@media (min-width: 992px) {
-  body {
-    background: url("../images/background_pc.png") no-repeat center center fixed;
-  }
-  body h1 {
-    font-size: 1.6em;
-  }
-  body h2 {
-    font-size: 1.2em;
-  }
-  body h3 {
-    font-size: 0.9em;
-  }
-  body p {
-    font-size: 0.8em;
-  }
+body h2 {
+  font-size: 1.2em;
+}
+body h3 {
+  font-size: 0.9em;
+}
+body p {
+  font-size: 0.8em;
 }
 
 a {
