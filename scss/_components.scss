@@ -1,20 +1,21 @@
 body {
     font-family: 'Open Sans', sans-serif;
+
     @media (max-width: 993px) {
-        background: url("../images/background.png") repeat-y center top fixed;
+        background: url("../images/background_phone2.png") repeat-y center top fixed;
         h1 { font-size: 1.8em; }
         h2 { font-size: 1.4em; }
         h3 { font-size: 1.1em; }
         p { font-size: 0.8em; }
     }
     @media (min-width: 992px) {
-        background: url("../images/background_cut.png") no-repeat center center fixed;
+        background: url("../images/background_pc.png") no-repeat center center fixed;
         h1 { font-size: 1.6em; }
         h2 { font-size: 1.2em; }
         h3 { font-size: 0.9em; }
         p { font-size: 0.8em; }  
     }
-    background-size: cover;
+    
 }
 
 @include a-neutralize();
