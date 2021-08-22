@@ -40,13 +40,8 @@ $synthetic-txt-margin: 6%;
     border: 2px solid white;
     border-radius: $border-radius;
     padding: $bulle-padding;
-
-    h1, hr { 
-        margin: $bulle-hr-margin; 
-    }  
-    h3 {
-        color: $txt-white;
-    }
+    h1, hr {margin: $bulle-hr-margin;}  
+    h3 {color: $txt-white;}
 }
 
 .synthetic {

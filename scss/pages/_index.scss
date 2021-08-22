@@ -18,9 +18,8 @@
 }
 
 #Contact {
-    margin-top: 11%;
-    margin-bottom: 11%;
-    padding-top: 11%;
+    margin: 11% 0;
+
     .bulle {
         text-align: center;
         &:hover {
@@ -31,7 +30,7 @@
     }
     .carte {
         background-color: transparent;
-        border: 2px solid white;
+        border-color: transparent;
         border-radius: 30px;
         color: $txt-light;
         text-align: center;

@@ -92,6 +92,7 @@ header {
   justify-content: space-between;
 }
 header a {
+  border: 1px solid red;
   padding: 110px;
   display: flex;
   align-items: center;
@@ -120,35 +121,31 @@ header button {
   border-color: transparent;
 }
 header button img {
-  width: 55px;
+  width: 60px;
 }
 header button:hover h3 {
   color: white;
 }
 
 nav {
-  margin-bottom: 110px;
-  text-align: center;
-  color: rgba(206, 206, 206, 0.74);
-}
-nav li {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-nav li:hover {
-  color: white;
-}
-
-footer a {
-  padding: 50px;
+  border: 1px solid black;
+  height: 0px;
+  /* change this with JavaScript */
   background-color: transparent;
-  border-color: transparent;
+  color: rgba(206, 206, 206, 0.74);
+  overflow-y: hidden;
+  transition: 2s;
+  /* 0.5 second transition effect to slide in the sidebar */
 }
-footer a img {
-  width: 110px;
+nav a {
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 2.3s;
 }
-footer a:hover h3 {
-  color: white;
+nav a:hover {
+  color: #f1f1f1;
 }
 
 #Intro {
@@ -164,9 +161,7 @@ footer a:hover h3 {
 }
 
 #Contact {
-  margin-top: 11%;
-  margin-bottom: 11%;
-  padding-top: 11%;
+  margin: 11% 0;
 }
 #Contact .bulle {
   text-align: center;
@@ -176,7 +171,7 @@ footer a:hover h3 {
 }
 #Contact .carte {
   background-color: transparent;
-  border: 2px solid white;
+  border-color: transparent;
   border-radius: 30px;
   color: rgba(206, 206, 206, 0.74);
   text-align: center;

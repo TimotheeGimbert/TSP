@@ -9,38 +9,28 @@
     <link rel="icon" href="./images/logo.png">
     <title>TSP | The Synthetic Project</title>
   </head>
-
   <body>
 
-    <header id="Header" class="container-fluid">
+    <header id="Header">
       <a href="./index.html"> 
-        <img src="./images/logo.png" alt="logo TSP">
+        <img src="./images/logo.png" alt="logo">
         <h1><span>T</span>he <span>S</span>ynthetic <span>P</span>roject</h1>
       </a>
-      <button  type="button" data-bs-toggle="collapse" data-bs-target="#navList" aria-controls="navList" aria-expanded="false" aria-label="Toggle navigation"> <!-- Bootstrap is used in the header for its collapse property -->
-        <img src="./images/menu.png" alt="menu button">
+      <button onclick="Nav()">
+        <img src="./images/menu.png" alt="menu">
         <h3>menu</h3>
       </button>
-    </header> 
-    <nav id="navList" class="collapse navbar-collapse">
-      <ul class="navbar-nav">
-        <li class="nav-item"> <a href="#Intro">Accueil</a></li>
-        <li class="nav-item"> &middot;</li>
-        <li class="nav-item"> <a href="./Synthetic-html.html">HTML | Structurer une page Web</a></li>
-        <li class="nav-item"> <a href="./Synthetic-css.html">CSS | Styliser une page Web</a></li> 
-        <li class="nav-item"> <a href="./Synthetic-sass.html">Sass | Préprocesseur CSS</a></li>
-        <li class="nav-item"> &middot;</li>           
-        <li class="nav-item"> <a href="./Synthetic-bootstrap.html">Bootstrap | Framework Front-End</a></li>
-        <li class="nav-item"> <a href="./Synthetic-js.html">JavaScript | Dynamiser une page Web</a></li>
-        <li class="nav-item"> <a href="./Synthetic-react.html">React JS |  Framework JavaScript</a></li>
-        <li class="nav-item"> &middot;</li>
-        <li class="nav-item"> <a href="#Contact">Infos / Contact</a></li>
-      </ul> 
+    </header>
+    <nav id="Nav-list">
+      <a href="#Intro">Accueil</a>
+      <a href="./langages.html">Langages Web</a>
+      <a href="./framework.html">Frameworks Front-End</a>
+      <a href="#Contact">Infos</a>
     </nav>
     
     <div class="container-fluid">
-      <section id="Intro" class="row">
 
+      <section id="Intro" class="row">
         <a class="bulle offset-1 col-10 offset-lg-4 col-lg-7 " href="#Synthetics">
           <h1>The Synthetic Project c'est ...</h1>
           <h3>... une base de données informative sur les notions clés en développement Web.</h3>
@@ -48,10 +38,9 @@
           <p>Le projet va progressivement présenter des fiches de synthèse minimalistes concernant les langages Front-End.</p> 
           <p>La réalisation de ce site garde un caractère ludique et expérimental, tout comme la rédaction des fiches ' Synthetics '.</p>
         </a>
-
       </section>
-      <section id="Synthetics" class="row">
 
+      <section id="Synthetics" class="row">
         <a class="synthetic offset-1 col-10 offset-lg-1 col-lg-6" href="Synthetic-html.html">
           <div class="row align-items-center justify-content-center">
             <div class="col-4 col-lg-6 text-center">
@@ -65,7 +54,6 @@
             </div>
           </div>  
         </a>
-
         <a class="synthetic offset-1 col-10 col-lg-6 offset-lg-5 " href="Synthetic-css.html">
           <div class="row align-items-center justify-content-center">
             <div class="col-4 col-lg-6 text-center">
@@ -79,7 +67,6 @@
             </div>
           </div>  
         </a>
- 
         <a class="synthetic offset-1 col-10 offset-lg-1 col-lg-6" href="Synthetic-sass.html">
           <div class="row align-items-center justify-content-center">
             <div class="col-4 col-lg-6 text-center">
@@ -93,7 +80,6 @@
             </div>  
           </div>
         </a>
-
         <a class="synthetic offset-1 col-10 col-lg-6 offset-lg-5 " href="Synthetic-bootstrap.html">
           <div class="row align-items-center justify-content-center">
             <div class="col-4 col-lg-6 text-center">
@@ -107,7 +93,6 @@
             </div>  
           </div>
         </a>
-
         <a class="synthetic offset-1 col-10 offset-lg-1 col-lg-6" href="Synthetic-js.html">
           <div class="row align-items-center justify-content-center">
             <div class="col-4 col-lg-6 text-center">
@@ -121,7 +106,6 @@
             </div>
           </div>  
         </a>
-
         <a class="synthetic offset-1 col-10 col-lg-6 offset-lg-5" href="Synthetic-react.html">
           <div class="row align-items-center justify-content-center">
             <div class="col-4 col-lg-6 text-center">
@@ -135,16 +119,13 @@
             </div>
           </div>
         </a>
-
       </section>
-      <section id="Contact" class="row align-items-center">
 
+      <section id="Contact" class="row align-items-center">
         <div class="bulle offset-2 col-8 col-lg-5">
           <h1>Et l'apprenti-développeur ...</h1>
-          <hr>
-          <p>... proche de Bordeaux, se prépare à suivre une formation de développement Web Full-Stack.</p>
-          <hr>
-          <p>Le code source de ce site web est disponible sur <a href="https://github.com/TimotheeGimbert" target="_blank"><span>GitHub</span></a></p>
+          <hr> <p>... proche de Bordeaux, se prépare à suivre une formation de développement Web Full-Stack.</p>
+          <hr> <p>Le code source de ce site web est disponible sur <a href="https://github.com/TimotheeGimbert" target="_blank"><span>GitHub</span></a></p>
           <p>Vous pouvez me contacter par <a href="mailto:gimbert2021@free.fr"><span>Email</span></a></p>
           <p>Et vous pouvez également me retrouver sur <a href="https://fr.linkedin.com/in/timoth%C3%A9e-gimbert-607b328a" target="_blank"><span>LinkedIn</span></a></p>
         </div>
@@ -154,18 +135,11 @@
           <h3>Junior Développeur</h3>
           <p>Auto-didacte</p>
         </div>
-
       </section>
-
-      <footer> 
-        <a href="./index.html#Header">
-          <img src="./images/arrow.png" alt="arrow UP">
-        </a>
-      </footer>
 
     </div> 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  
+    <script type="text/javascript" src="main.js"></script>
   </body>
 </html>

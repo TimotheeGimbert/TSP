@@ -3,7 +3,7 @@ $header-padding: 110px; // IT CURRENTLY CHANGES THE LOGO SIZE ALSO : see below l
 header {
     display: flex;
     justify-content: space-between;
-    a {
+    a { border: 1px solid red;
         padding: $header-padding;
         display: flex;
         align-items: center;
@@ -29,46 +29,34 @@ header {
         }
     }
 
-    button {
+    button { // Position and style the sidebar button 
         padding: $header-padding;
         background-color: transparent;
         border-color: transparent;
-        img {
-            width: $header-padding/2;
-        } 
-        &:hover {
+        img {width: 60px;} 
+        &:hover { 
             h3 {
-            color: $txt-white;
-            }
+                color: $txt-white;
+            } 
         }      
-    }    
+    }   
 }
 
-nav {
-    margin-bottom: $header-padding;
-    text-align: center;
+nav { border: 1px solid black;
+    height: 0px; /* change this with JavaScript */
+    background-color: transparent;
     color: $txt-light;
-    li {
-        font-size: 18px;
-        margin-bottom: 20px;
+    overflow-y: hidden; // Disable vertical scroll
+    transition: 2s; /* 0.5 second transition effect to slide in the sidebar */
+  
+    a { // The sidebar links 
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 2.3s;
         &:hover {
-            color: $txt-white;
+            color: #f1f1f1;
         }
-    }
-}
-
-footer {
-    a {
-        padding: 50px;
-        background-color: transparent;
-        border-color: transparent; 
-        img {
-            width: 110px;
-        } 
-        &:hover {
-            h3 {
-            color: $txt-white;
-            }
-        }  
     }
 }
