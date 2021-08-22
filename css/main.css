@@ -86,18 +86,18 @@ header {
   justify-content: space-between;
 }
 header a {
-  text-decoration: none;
-  padding: 110px;
   display: flex;
   align-items: center;
+  padding: 110px;
+  text-decoration: none;
 }
 header a img {
   width: 110px;
-  margin-right: 110px;
 }
 header a h1 {
   color: rgba(206, 206, 206, 0.74);
   font-size: 20px;
+  margin-left: 110px;
 }
 header a h1 span {
   color: white;
