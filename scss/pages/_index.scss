@@ -22,6 +22,9 @@
 
     .bulle {
         text-align: center;
+        a {
+            color: $txt-light;
+        }
         &:hover {
             span {
                 color: white;

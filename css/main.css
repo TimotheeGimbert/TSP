@@ -179,6 +179,9 @@ footer a:hover img {
 #Contact .bulle {
   text-align: center;
 }
+#Contact .bulle a {
+  color: rgba(206, 206, 206, 0.74);
+}
 #Contact .bulle:hover span {
   color: white;
 }
