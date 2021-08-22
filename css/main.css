@@ -55,9 +55,6 @@ a:active {
 .bulle h1, .bulle hr {
   margin: 3% 0%;
 }
-.bulle h3 {
-  color: white;
-}
 
 .synthetic {
   border-radius: 30px;
@@ -165,7 +162,7 @@ footer a:hover img {
 #Intro {
   margin-bottom: 6%;
 }
-#Intro a:hover p {
+#Intro a:hover h3, #Intro a:hover p {
   color: white;
 }
 
