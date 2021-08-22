@@ -3,7 +3,8 @@ $header-padding: 110px; // IT CURRENTLY CHANGES THE LOGO SIZE ALSO : see below l
 header {
     display: flex;
     justify-content: space-between;
-    a { border: 1px solid red;
+    a { 
+        text-decoration: none;
         padding: $header-padding;
         display: flex;
         align-items: center;
@@ -42,21 +43,42 @@ header {
     }   
 }
 
-nav { border: 1px solid black;
+nav {
     height: 0px; /* change this with JavaScript */
+    padding-right: 166px;
+    
     background-color: transparent;
-    color: $txt-light;
     overflow-y: hidden; // Disable vertical scroll
-    transition: 2s; /* 0.5 second transition effect to slide in the sidebar */
-  
-    a { // The sidebar links 
+    transition: 1.5s; /* 0.5 second transition effect to slide in the sidebar */
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    a {  
         text-decoration: none;
-        font-size: 25px;
-        color: #818181;
-        display: block;
-        transition: 2.3s;
+        font-size: 18px;
+        color: $txt-light;
+        margin-bottom: 20px;
         &:hover {
-            color: #f1f1f1;
+            color: white;
+        }
+    }    
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    a {
+        margin: 60px;
+        width: 60px;
+        img {
+            width: 100%
+        }
+        &:hover {
+            img {
+                width: 130%;
+            }
         }
     }
 }
