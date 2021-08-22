@@ -72,13 +72,12 @@ footer {
     a {
         margin: 60px;
         width: 60px;
+        border-radius: 30px;
         img {
             width: 100%
         }
         &:hover {
-            img {
-                width: 130%;
-            }
+            background-color: $bg-light;
         }
     }
 }
