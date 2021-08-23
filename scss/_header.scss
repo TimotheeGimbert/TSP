@@ -70,13 +70,14 @@ nav {
 
 $footer-spacing: 110px;
 $footer-arrow-width: 60px;
+$footer-button-radius: 30px;
 footer {
     display: flex; 
     justify-content: flex-end;
     padding: $footer-spacing;
     a {
         width: $footer-spacing;
-        border-radius: ($footer-arrow-width/2);
+        border-radius: ($footer-button-radius);
         text-align: center;
         img {
             width: $footer-arrow-width;

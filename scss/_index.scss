@@ -1,22 +1,14 @@
-$Intro-margin-bottom: 6%;
-#Intro {
-    margin-bottom: $Intro-margin-bottom;
-    a:hover {
-        h3, p {
-            color: $txt-white;
-        }
-    }
-}
 
+$Synthetics-margin-top: 11%; // vertical spacing of .synthetics 
 #Synthetics {
     > a {
-        margin-top: 6%; // vertical spacing of .synthetics 
+        margin-top: $Synthetics-margin-top; 
     }
 }
 
+$Contact-margin-top: $Synthetics-margin-top;
 #Contact {
-    margin-top: 11%;
-
+    margin-top: $Contact-margin-top;
     .bulle {
         text-align: center;
         a {
@@ -46,7 +38,3 @@ $Intro-margin-bottom: 6%;
         }       
     }
 }
-
-
-
-
