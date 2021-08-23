@@ -7,29 +7,30 @@ $Synthetics-margin-top: 11%; // vertical spacing of .synthetics
 }
 
 $Contact-margin-top: $Synthetics-margin-top;
+$Contact__carte-padding: 2%;
 #Contact {
     margin-top: $Contact-margin-top;
     .bulle {
         text-align: center;
         a {
-            color: $txt-light;
+            color: $txt-color-secondary;
         }
         &:hover {
             span {
-                color: white;
+                color: $txt-color-primary;
             }
         }
     }
     .carte {
         background-color: transparent;
         border-color: transparent;
-        border-radius: 30px;
-        color: $txt-light;
+        border-radius: $border-radius;
+        color: $txt-color-secondary;
         text-align: center;
-        padding: 2%;
+        padding: $Contact__carte-padding;
         h3 {
             font-size: 1.3em; 
-            color: white;
+            color: $txt-color-primary;
         }
         img {
             width: 50%; 

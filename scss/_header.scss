@@ -14,19 +14,19 @@ header {
             width: $header__logo-width;
         }
         h1 {
-            color: $txt-light;
+            color: $txt-color-secondary;
             font-size: $header__title-size;
             margin-left: $header-padding;
             span {
-                color: $txt-white;
+                color: $txt-color-primary;
                 font-size: (2*$header__title-size);
             }
         }
         &:hover {
             h1 {
-                color: $txt-white;
+                color: $txt-color-primary;
                 span {
-                    color: $txt-light;
+                    color: $txt-color-secondary;
                 }
             }
         }
@@ -39,11 +39,11 @@ header {
             width: $header__button-width;
         }
         h3 {
-            color: $txt-light;
+            color: $txt-color-secondary;
         } 
         &:hover { 
             h3 {
-                color: $txt-white;
+                color: $txt-color-primary;
             } 
         }      
     }   
@@ -60,10 +60,10 @@ nav {
     a { 
         display: block;
         font-size: 18px;
-        color: $txt-light;
+        color: $txt-color-secondary;
         margin-bottom: 20px;
         &:hover {
-            color: white;
+            color: $txt-color-primary;
         }
     }    
 }

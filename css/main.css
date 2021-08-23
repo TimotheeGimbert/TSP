@@ -1,6 +1,7 @@
 body {
   height: 100%;
   margin: 0;
+  padding: 0;
   background-color: rgba(2, 3, 8, 0.541);
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0)), url("../images/background_pc.png");
   background-repeat: no-repeat;
@@ -8,33 +9,6 @@ body {
   background-attachment: fixed;
   background-size: cover;
   font-family: "Open Sans", sans-serif;
-}
-body h1 {
-  font-size: 1.6em;
-  color: white;
-}
-body h2 {
-  font-size: 1.2em;
-  color: white;
-}
-body h3 {
-  font-size: 1em;
-  color: white;
-}
-body hr {
-  color: white;
-}
-body p {
-  font-size: 0.9em;
-  color: rgba(206, 206, 206, 0.74);
-}
-@media (max-width: 600px) {
-  body h3 {
-    font-size: 1.1em;
-  }
-  body p {
-    font-size: 1em;
-  }
 }
 
 a:link {
@@ -47,6 +21,39 @@ a:active {
   text-decoration: none !important;
 }
 
+h1 {
+  font-size: 1.6em;
+  color: white;
+}
+
+h2 {
+  font-size: 1.2em;
+  color: white;
+}
+
+h3 {
+  font-size: 1em;
+  color: white;
+}
+
+hr {
+  color: white;
+}
+
+p {
+  font-size: 0.9em;
+  color: rgba(206, 206, 206, 0.74);
+}
+
+@media (max-width: 600px) {
+  h3 {
+    font-size: 1.1em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
 .bulle {
   border: 2px solid white;
   border-radius: 30px;
@@ -78,7 +85,7 @@ a:active {
   margin-bottom: 6%;
 }
 .synthetic p {
-  margin: 0%;
+  margin: 0;
 }
 
 header {

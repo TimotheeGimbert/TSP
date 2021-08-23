@@ -1,34 +1,4 @@
-body {
-    height: 100%;
-    margin: 0;
 
-    background-color: $bg-dark;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.0)), url("../images/background_pc.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-
-    font-family: 'Open Sans', sans-serif;
-    h1 { font-size: 1.6em; color: $txt-white;}
-    h2 { font-size: 1.2em; color: $txt-white; }
-    h3 { font-size: 1em; color: $txt-white;}
-    hr { color: $txt-white; }
-    p { font-size: 0.9em; color: $txt-light;}  
-    // RESPONSIVE CHANGE OF FONT SIZES
-    @media (max-width: $breakpoint) {
-        h3 { font-size: 1.1em; }
-        p { font-size: 1em; }   
-    }
-}
-
-a { 
-    &:link {text-decoration: none !important;}
-    &:visited {text-decoration: none !important;}
-    &:active {text-decoration: none !important;}
-}
-
-$border-radius : 30px;
 $bulle-hr-margin : 3% 0%;
 $bulle-padding : 6%;
 $synthetic-padding : 3%;
@@ -36,7 +6,7 @@ $synthetic-img-width: 30%;
 $synthetic-txt-margin: 6%;
 
 .bulle {
-    border: 2px solid white;
+    border: 2px solid $txt-color-primary;
     border-radius: $border-radius;
     padding: $bulle-padding;
     h1, hr {margin: $bulle-hr-margin;}  
@@ -47,16 +17,16 @@ $synthetic-txt-margin: 6%;
     background-color: $bg-dark;
     padding: $synthetic-padding;
     &:hover {
-        background-color: white;
-        h1, h2, h3, hr { color: $txt-dark; }
-        p { color: $txt-grey; }
+        background-color: $txt-color-primary;
+        h1, h2, h3, hr { color: $txt-color-dark; }
+        p { color: $txt-color-secondary--strong; }
     } 
 
     img { width: $synthetic-img-width; }
     h1, h2 { 
-        color: $txt-white;
+        color: $txt-color-primary;
         margin-bottom: $synthetic-txt-margin; 
     }
-    p { margin: 0%; } 
+    p { margin: 0; } 
 }
 
