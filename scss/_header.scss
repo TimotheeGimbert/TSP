@@ -1,16 +1,17 @@
 $header-padding: 110px;
-$header-logo-width: 110px;
+$header__logo-width: 110px;
 $header__title-size: 20px;
 $header__button-width: 40px;
-
 header {
-    display: flex; justify-content: space-between;
+    display: flex; 
+    justify-content: space-between;
     a { 
-        display: flex; align-items: center;
+        display: flex; 
+        align-items: center;
         padding: $header-padding;
         text-decoration: none;
         img {
-            width: $header-logo-width;
+            width: $header__logo-width;
         }
         h1 {
             color: $txt-light;
@@ -36,6 +37,9 @@ header {
         border-color: transparent;
         img {
             width: $header__button-width;
+        }
+        h3 {
+            color: $txt-light;
         } 
         &:hover { 
             h3 {
@@ -45,19 +49,16 @@ header {
     }   
 }
 
+$nav-padding: 110px;
+$nav-time: 1.5s;    // time of collapsing effect 
 nav {
-    height: 0px; /* change this with JavaScript */
-    padding-right: 166px;
-    
-    background-color: transparent;
-    overflow-y: hidden; // Disable vertical scroll
-    transition: 1.5s; /* 0.5 second transition effect to slide in the sidebar */
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    a {  
-        text-decoration: none;
+    height: 0px;    // This is changed with JavaScript
+    padding-right: $nav-padding; 
+    text-align: end;
+    overflow-y: hidden;     // Hide vertical scrolling bar
+    transition: $nav-time;   
+    a { 
+        display: block;
         font-size: 18px;
         color: $txt-light;
         margin-bottom: 20px;
@@ -67,16 +68,18 @@ nav {
     }    
 }
 
+$footer-spacing: 110px;
+$footer-arrow-width: 60px;
 footer {
-    display: flex;
-    flex-direction: row;
+    display: flex; 
     justify-content: flex-end;
+    padding: $footer-spacing;
     a {
-        margin: 60px;
-        width: 60px;
-        border-radius: 30px;
+        width: $footer-spacing;
+        border-radius: ($footer-arrow-width/2);
+        text-align: center;
         img {
-            width: 100%
+            width: $footer-arrow-width;
         }
         &:hover {
             background-color: $bg-light;

@@ -15,11 +15,11 @@ body h1 {
 }
 body h2 {
   font-size: 1.2em;
-  color: rgba(206, 206, 206, 0.74);
+  color: white;
 }
 body h3 {
   font-size: 1em;
-  color: rgba(206, 206, 206, 0.74);
+  color: white;
 }
 body hr {
   color: white;
@@ -117,24 +117,22 @@ header button {
 header button img {
   width: 40px;
 }
+header button h3 {
+  color: rgba(206, 206, 206, 0.74);
+}
 header button:hover h3 {
   color: white;
 }
 
 nav {
   height: 0px;
-  /* change this with JavaScript */
-  padding-right: 166px;
-  background-color: transparent;
+  padding-right: 110px;
+  text-align: end;
   overflow-y: hidden;
   transition: 1.5s;
-  /* 0.5 second transition effect to slide in the sidebar */
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
 }
 nav a {
-  text-decoration: none;
+  display: block;
   font-size: 18px;
   color: rgba(206, 206, 206, 0.74);
   margin-bottom: 20px;
@@ -145,16 +143,16 @@ nav a:hover {
 
 footer {
   display: flex;
-  flex-direction: row;
   justify-content: flex-end;
+  padding: 110px;
 }
 footer a {
-  margin: 60px;
-  width: 60px;
+  width: 110px;
   border-radius: 30px;
+  text-align: center;
 }
 footer a img {
-  width: 100%;
+  width: 60px;
 }
 footer a:hover {
   background-color: rgba(255, 255, 255, 0.459);
