@@ -49,11 +49,11 @@ header {
     }   
 }
 
-$nav-padding: 110px;
+$nav-padding-right: 110px;
 $nav-time: 1.5s;    // time of collapsing effect 
 nav {
     height: 0px;    // This is changed with JavaScript
-    padding-right: $nav-padding; 
+    padding-right: $nav-padding-right; 
     text-align: end;
     overflow-y: hidden;     // Hide vertical scrolling bar
     transition: $nav-time;   
