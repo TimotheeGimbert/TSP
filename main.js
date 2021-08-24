@@ -2,7 +2,7 @@
 // Function that opens and closes the navbar
 var navOpen = false;
 function OpenNav() {
-    document.getElementById("Nav-list").style.height = "260px";
+    document.getElementById("Nav-list").style.height = "190px";
 }
 function CloseNav() {  
     document.getElementById("Nav-list").style.height = "0";

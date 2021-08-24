@@ -90,12 +90,12 @@ p {
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding: 6%;
 }
 header a {
+  flex: 1;
   display: flex;
-  align-items: center;
-  padding: 110px;
   text-decoration: none;
 }
 header a img {
@@ -103,12 +103,13 @@ header a img {
 }
 header a h1 {
   color: rgba(206, 206, 206, 0.74);
-  font-size: 20px;
-  margin-left: 110px;
+  font-size: 1.2rem;
+  align-self: center;
+  margin-left: 6%;
 }
 header a h1 span {
   color: white;
-  font-size: 40px;
+  font-size: 2.4rem;
 }
 header a:hover h1 {
   color: white;
@@ -116,8 +117,19 @@ header a:hover h1 {
 header a:hover h1 span {
   color: rgba(206, 206, 206, 0.74);
 }
+@media (max-width: 777px) {
+  header a img {
+    width: 75px;
+  }
+  header a h1 {
+    font-size: 1rem;
+  }
+  header a h1 span {
+    font-size: 2rem;
+  }
+}
 header button {
-  padding: 110px;
+  align-self: center;
   background-color: transparent;
   border-color: transparent;
 }
@@ -133,10 +145,10 @@ header button:hover h3 {
 
 nav {
   height: 0px;
-  padding-right: 110px;
+  padding-right: 9%;
   text-align: end;
   overflow-y: hidden;
-  transition: 1.5s;
+  transition: 1.25s;
 }
 nav a {
   display: block;
@@ -154,7 +166,7 @@ footer {
   padding: 110px;
 }
 footer a {
-  width: 110px;
+  width: 80px;
   border-radius: 30px;
   text-align: center;
 }
