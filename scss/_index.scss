@@ -1,6 +1,7 @@
 
 #Intro {
   a {
+    p {color: $txt-color-secondary;}
     &:hover {
       background-color: $bg-light;
       h3, hr, p {
