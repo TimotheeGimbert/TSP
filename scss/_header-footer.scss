@@ -5,7 +5,6 @@ $header__title-marginLeft: 22px;
 $header__button-width: 40px;
 header { 
   display: flex;
-  justify-content: space-around; 
   padding: $header-padding;
   a { 
     flex: 1;
@@ -53,17 +52,6 @@ header {
       h3 {
         display: none;
       }
-    }
-  }
-  @media (max-width: $breakpoint) {   // on small screens                      
-    a > h1 {                    // font sizes are decreased
-      font-size: (0.8*$header__title-size);
-      span {
-        font-size: (1.64*$header__title-size);
-      }
-    }
-    button > h3 {               
-      display: none;          // h3 "menu" under nav button is not displayed, that aligns the menu icon with the logo
     }
   }
 }

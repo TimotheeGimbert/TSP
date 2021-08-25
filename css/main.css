@@ -81,7 +81,6 @@ p {
 
 header {
   display: flex;
-  justify-content: space-around;
   padding: 8%;
 }
 header a {
@@ -124,17 +123,6 @@ header button:hover h3 {
 }
 @media (max-width: 777px) {
   header button h3 {
-    display: none;
-  }
-}
-@media (max-width: 777px) {
-  header a > h1 {
-    font-size: 0.96rem;
-  }
-  header a > h1 span {
-    font-size: 1.968rem;
-  }
-  header button > h3 {
     display: none;
   }
 }
