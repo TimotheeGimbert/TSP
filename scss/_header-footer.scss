@@ -1,0 +1,112 @@
+$header-padding: 8%;
+$header__img-width: 85px;
+$header__title-size: 1.2rem;
+$header__title-marginLeft: 22px; 
+$header__button-width: 40px;
+header { 
+  display: flex;
+  justify-content: space-around; 
+  padding: $header-padding;
+  a { 
+    flex: 1;
+    display: flex; 
+    text-decoration: none;
+    img {
+      width: $header__img-width;
+    }
+    h1 { 
+      color: $txt-color-secondary;
+      font-size: $header__title-size;
+      align-self: center;
+      margin-left: $header__title-marginLeft;
+      span {
+        color: $txt-color-primary;
+        font-size: (2*$header__title-size);
+      }
+      //border: 1px solid black;
+    }
+    &:hover {
+      h1 {
+        color: $txt-color-primary;
+        span {
+          color: $txt-color-secondary;
+        }
+      }
+    }
+  }
+  button { 
+    align-self: center;
+    background-color: transparent;
+    border-color: transparent;
+    img {
+      width: $header__button-width;
+    }
+    h3 {
+      color: $txt-color-secondary;
+    } 
+    &:hover { 
+      h3 {
+        color: $txt-color-primary;
+      } 
+    }      
+    @media (max-width: $breakpoint) {
+      h3 {
+        display: none;
+      }
+    }
+  }
+  @media (max-width: $breakpoint) {   // on small screens                      
+    a > h1 {                    // font sizes are decreased
+      font-size: (0.8*$header__title-size);
+      span {
+        font-size: (1.64*$header__title-size);
+      }
+    }
+    button > h3 {               
+      display: none;          // h3 "menu" under nav button is not displayed, that aligns the menu icon with the logo
+    }
+  }
+}
+
+
+$nav__txt-size: 18px;
+$nav-transitionTime: 1.25s;
+$nav-paddingRight: 9%;
+$nav-marginBottom: 20px;
+nav {
+  height: 0px;    // This is changed by JavaScript when user clicks on nav icon
+  padding-right: $nav-paddingRight; 
+  text-align: end;
+  overflow-y: hidden;
+  transition: $nav-transitionTime;   
+  a { 
+    display: block;
+    font-size: $nav__txt-size;
+    color: $txt-color-secondary;
+    margin-bottom: $nav-marginBottom;
+    &:hover {
+      color: $txt-color-primary;
+    }
+  }    
+}
+
+
+$footer-padding: 110px;
+$footer__button-width: 80px;
+$footer__img-width: 60px;
+footer {
+  display: flex; 
+  justify-content: flex-end;
+  padding: $footer-padding;
+  a {
+    width: $footer__button-width;
+    border-radius: $border-radius;
+    text-align: center;
+    img {
+      width: $footer__img-width;
+    }
+    &:hover {
+      background-color: $bg-light;
+    }
+  }
+}

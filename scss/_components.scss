@@ -1,32 +1,63 @@
+body {
+  height: 100%;       // need to search for the real convenience of that
+  margin: 0;          // need to search for the real convenience of that
+  padding: 0;         // need to search for the real convenience of that
 
-$bulle-hr-margin : 3% 0%;
-$bulle-padding : 6%;
-$synthetic-padding : 3%;
-$synthetic-img-width: 30%;
-$synthetic-txt-margin: 6%;
+  background-color: $bg-dark;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.0)), url("../images/background_pc.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 
+  font-family: 'Open Sans', sans-serif;
+}
+a { 
+  &:link {text-decoration: none !important;}
+  &:visited {text-decoration: none !important;}
+  &:active {text-decoration: none !important;}
+}
+h1, h2, h3 {
+  color: $txt-color-primary;
+}
+hr, p {
+  color: $txt-color-secondary;
+}
+h1 {font-size: 1.6em;}
+h2 {font-size: 1.2em;}
+h3 {font-size: 1em;}
+p {font-size: 0.9em;}
+
+
+$bulle__hr-margin: 2% 0%;
+$bulle-padding: 6%;
 .bulle {
-    border: 2px solid $txt-color-primary;
-    border-radius: $border-radius;
-    padding: $bulle-padding;
-    h1, hr {margin: $bulle-hr-margin;}  
+  border: 2px solid $txt-color-primary;
+  border-radius: $border-radius;
+  padding: $bulle-padding;
+  h1, hr {
+    margin: $bulle__hr-margin;
+  }
 }
 
-.synthetic {
-    border-radius: $border-radius;  
-    background-color: $bg-dark;
-    padding: $synthetic-padding;
-    &:hover {
-        background-color: $txt-color-primary;
-        h1, h2, h3, hr { color: $txt-color-dark; }
-        p { color: $txt-color-secondary--strong; }
-    } 
 
-    img { width: $synthetic-img-width; }
-    h1, h2 { 
-        color: $txt-color-primary;
-        margin-bottom: $synthetic-txt-margin; 
-    }
-    p { margin: 0; } 
+$synthetic-padding: 3%;
+$synthetic__img-width: 30%;
+$synthetic__txt-margin: 6%;
+.synthetic {
+  border-radius: $border-radius;  
+  background-color: $bg-dark;
+  padding: $synthetic-padding;
+  &:hover {
+    background-color: $txt-color-primary;
+    h1, h2, h3, hr { color: $txt-color-dark; }
+    p { color: $txt-color-secondary--strong; }
+  } 
+  img { width: $synthetic__img-width; }
+  h1, h2 { 
+    color: $txt-color-primary;
+    margin-bottom: $synthetic__txt-margin; 
+  }
+  p { margin: 0; } 
 }
 

@@ -21,46 +21,37 @@ a:active {
   text-decoration: none !important;
 }
 
+h1, h2, h3 {
+  color: white;
+}
+
+hr, p {
+  color: rgba(206, 206, 206, 0.74);
+}
+
 h1 {
   font-size: 1.6em;
-  color: white;
 }
 
 h2 {
   font-size: 1.2em;
-  color: white;
 }
 
 h3 {
   font-size: 1em;
-  color: white;
-}
-
-hr {
-  color: white;
 }
 
 p {
   font-size: 0.9em;
-  color: rgba(206, 206, 206, 0.74);
 }
 
-@media (max-width: 600px) {
-  h3 {
-    font-size: 1.1em;
-  }
-
-  p {
-    font-size: 1em;
-  }
-}
 .bulle {
   border: 2px solid white;
   border-radius: 30px;
   padding: 6%;
 }
 .bulle h1, .bulle hr {
-  margin: 3% 0%;
+  margin: 2% 0%;
 }
 
 .synthetic {
@@ -91,7 +82,7 @@ p {
 header {
   display: flex;
   justify-content: space-around;
-  padding: 6%;
+  padding: 8%;
 }
 header a {
   flex: 1;
@@ -99,13 +90,13 @@ header a {
   text-decoration: none;
 }
 header a img {
-  width: 110px;
+  width: 85px;
 }
 header a h1 {
   color: rgba(206, 206, 206, 0.74);
   font-size: 1.2rem;
   align-self: center;
-  margin-left: 6%;
+  margin-left: 22px;
 }
 header a h1 span {
   color: white;
@@ -116,17 +107,6 @@ header a:hover h1 {
 }
 header a:hover h1 span {
   color: rgba(206, 206, 206, 0.74);
-}
-@media (max-width: 777px) {
-  header a img {
-    width: 75px;
-  }
-  header a h1 {
-    font-size: 1rem;
-  }
-  header a h1 span {
-    font-size: 2rem;
-  }
 }
 header button {
   align-self: center;
@@ -141,6 +121,22 @@ header button h3 {
 }
 header button:hover h3 {
   color: white;
+}
+@media (max-width: 777px) {
+  header button h3 {
+    display: none;
+  }
+}
+@media (max-width: 777px) {
+  header a > h1 {
+    font-size: 0.96rem;
+  }
+  header a > h1 span {
+    font-size: 1.968rem;
+  }
+  header button > h3 {
+    display: none;
+  }
 }
 
 nav {
@@ -177,38 +173,18 @@ footer a:hover {
   background-color: rgba(255, 255, 255, 0.459);
 }
 
-#Synthetics > a {
-  margin-top: 11%;
+#Intro a:hover {
+  background-color: rgba(255, 255, 255, 0.459);
+}
+#Intro a:hover h3, #Intro a:hover hr, #Intro a:hover p {
+  color: rgba(63, 60, 60, 0.924);
 }
 
-#Contact {
-  margin-top: 11%;
+#Synthetics {
+  margin-top: 6%;
 }
-#Contact .bulle {
-  text-align: center;
-}
-#Contact .bulle a {
-  color: rgba(206, 206, 206, 0.74);
-}
-#Contact .bulle:hover span {
-  color: white;
-}
-#Contact .carte {
-  background-color: transparent;
-  border-color: transparent;
-  border-radius: 30px;
-  color: rgba(206, 206, 206, 0.74);
-  text-align: center;
-  padding: 2%;
-}
-#Contact .carte h3 {
-  font-size: 1.3em;
-  color: white;
-}
-#Contact .carte img {
-  width: 50%;
-  border-radius: 30px;
-  margin: 11%;
+#Synthetics > a {
+  margin-top: 6%;
 }
 
 .concept {

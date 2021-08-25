@@ -1,41 +1,19 @@
 
-$Synthetics-margin-top: 11%; // vertical spacing of .synthetics 
-#Synthetics {
-    > a {
-        margin-top: $Synthetics-margin-top; 
+#Intro {
+  a {
+    &:hover {
+      background-color: $bg-light;
+      h3, hr, p {
+        color: $txt-color-dark;
+      }
     }
+  }
 }
 
-$Contact-margin-top: $Synthetics-margin-top;
-$Contact__carte-padding: 2%;
-#Contact {
-    margin-top: $Contact-margin-top;
-    .bulle {
-        text-align: center;
-        a {
-            color: $txt-color-secondary;
-        }
-        &:hover {
-            span {
-                color: $txt-color-primary;
-            }
-        }
-    }
-    .carte {
-        background-color: transparent;
-        border-color: transparent;
-        border-radius: $border-radius;
-        color: $txt-color-secondary;
-        text-align: center;
-        padding: $Contact__carte-padding;
-        h3 {
-            font-size: 1.3em; 
-            color: $txt-color-primary;
-        }
-        img {
-            width: 50%; 
-            border-radius: 30px;
-            margin: 11%;
-        }       
-    }
+$Synthetics-margin-top: 6%; // vertical spacing of .synthetics 
+#Synthetics {
+  margin-top: $Synthetics-margin-top;
+  > a {
+    margin-top: $Synthetics-margin-top; 
+  }
 }
