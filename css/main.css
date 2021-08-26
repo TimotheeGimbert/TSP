@@ -91,7 +91,7 @@ header button:hover {
 header button:hover h3 {
   color: white;
 }
-@media (max-width: 777px) {
+@media all and (max-width: 1300px) {
   header button h3 {
     display: none;
   }
@@ -135,27 +135,25 @@ footer a:hover {
   display: flex;
   justify-content: center;
 }
-.article__container .bulle {
+.article__container .bubble {
   flex-basis: 40%;
   min-width: 450px;
-  border: 2px solid white;
+  padding: 6%;
+  border: 3px solid white;
   border-radius: 30px;
   text-align: center;
-  margin: 0 6%;
-  padding: 6% 6% 3% 6%;
 }
-.article__container .bulle img {
+.article__container .bubble a img {
   width: 60px;
   transform: rotate(180deg);
-  margin-top: 6%;
 }
-.article__container .bulle img:hover {
+.article__container .bubble a img:hover {
   background-color: rgba(255, 255, 255, 0.459);
   border-radius: 30px;
 }
 
 #Main {
-  padding-top: 1px;
+  padding-top: 100px;
 }
 #Main .main__container {
   margin: 100px 6%;
@@ -221,6 +219,28 @@ footer a:hover {
   color: rgba(92, 87, 87, 0.924);
 }
 
+@media all and (max-width: 1300px) {
+  .article__container .bubble {
+    flex: 1;
+    padding-bottom: 6%;
+    margin-bottom: 0;
+  }
+  .article__container .bubble a {
+    display: none;
+  }
+
+  #Main {
+    padding-top: 0;
+  }
+  #Main .main__container > h1 {
+    font-size: 1.4em;
+    flex-basis: 66%;
+    padding: 10px;
+  }
+  #Main .main__container .synthetic {
+    flex-basis: 80%;
+  }
+}
 .concept {
   padding: 0 110px;
 }
