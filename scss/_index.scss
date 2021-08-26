@@ -1,20 +1,84 @@
-
-#Intro {
-  a {
-    p {color: $txt-color-secondary;}
-    &:hover {
-      background-color: $bg-light;
-      h3, hr, p {
-        color: $txt-color-dark;
+.article__container {
+  display: flex;
+  justify-content: center;
+  .bulle {
+    flex-basis: 40%;
+    min-width: 450px;
+    border: 2px solid $txt-color-primary;
+    border-radius: $border-radius;
+    text-align: center;
+    margin: 0 6%;
+    padding: 6% 6% 3% 6%;
+    img {
+      width: 60px;
+      transform: rotate(180deg);
+      margin-top: 6%;
+      &:hover {
+        background-color: $bg-light;
+        border-radius: $border-radius;
       }
     }
   }
 }
 
-$Synthetics-margin-top: 6%; // vertical spacing of .synthetics 
-#Synthetics {
-  margin-top: $Synthetics-margin-top;
-  > a {
-    margin-top: $Synthetics-margin-top; 
+.main__container {
+  margin: 0 6%;
+  margin-top: 200px;
+  padding: 80px 0;
+  background-color: rgba(7, 7, 7, 0.5);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  border-radius: $border-radius;
+
+  > h1 {
+    font-size: 30px;
+    flex-basis: 66%;
+    text-align: center;
+    background-color: white;
+    color: rgb(47, 47, 47);
+    margin-bottom: 80px;
+    padding: 20px 0;
+    border-radius: $border-radius;
+  }
+
+  .synthetic {
+    background-color: $bg-dark;
+    border-radius: $border-radius;
+    min-width: 500px;
+    margin-bottom: 40px;
+    padding: 30px 20px;
+  
+    flex-basis: 41%;
+    display: flex;
+    align-items: center;
+
+    & > h1 {
+      writing-mode: sideways-lr;
+      font-size: 1.2rem;
+      margin: auto 0px;
+    }
+
+    img {
+      max-width: 110px;
+      margin: 0 20px;
+    }
+
+    &__text {
+      flex: 1;
+      text-align: center;
+      padding: 0 10px;
+      h1, h2 { 
+        color: $txt-color-primary; 
+      }
+      p {margin: 0;}
+    }
+    
+    &:hover {
+      background-color: $txt-color-primary;
+      h1, h2, h3, hr { color: $txt-color-dark; }
+      p { color: $txt-color-secondary--strong; }
+    }
   }
 }

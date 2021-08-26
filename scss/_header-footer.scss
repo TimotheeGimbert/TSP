@@ -1,4 +1,4 @@
-$header-padding: 8%;
+$header-padding: 6%;
 $header__img-width: 85px;
 $header__title-size: 1.2rem;
 $header__title-marginLeft: 22px; 
@@ -22,7 +22,6 @@ header {
         color: $txt-color-primary;
         font-size: (2*$header__title-size);
       }
-      //border: 1px solid black;
     }
     &:hover {
       h1 {
@@ -40,10 +39,12 @@ header {
     img {
       width: $header__button-width;
     }
-    h3 {
+    h3 { 
       color: $txt-color-secondary;
+      margin: 0;
     } 
     &:hover { 
+      cursor: pointer;
       h3 {
         color: $txt-color-primary;
       } 
@@ -59,7 +60,7 @@ header {
 
 $nav__txt-size: 18px;
 $nav-transitionTime: 1.25s;
-$nav-paddingRight: 9%;
+$nav-paddingRight: 6%;
 $nav-marginBottom: 20px;
 nav {
   height: 0px;    // This is changed by JavaScript when user clicks on nav icon

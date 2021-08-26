@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" txt="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css"/>
     <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans'>
     <link rel="icon" href="./images/logo.png">
@@ -27,111 +26,86 @@
       <a href="./frameworks.html">Frameworks Front-End</a>
     </nav>
     
-    <div class="container-fluid">
-
-      <section id="Intro" class="row">
-        <a class="bulle offset-1 col-10 offset-lg-4 col-lg-7 " href="#Synthetics">
+      <article id="Intro" class="article__container">
+        <div class="bulle" href="#Langages">
           <h1>The Synthetic Project c'est ...</h1>
           <h3>... une petite base de données naissante qui souhaite synthétiser des notions clés du développement Web.</h3>
           <hr>
-          <p>Ce projet est expérimental et devrait s'enrichir progressivement, les travaux actuels sont:</p>
-          <p>Un Header Responsive : proportionnalité sur tout écran + ouverture navigation esthétique en pur CSS</p>
-          <p>Le minimalisme et la clarté du code responsive de la page, au fil des essais Bootstrap, Flexbox, CSS grid, media queries</p>
+          <p>Ce projet est expérimental et devrait s'enrichir progressivement !</p>
+          <a href="#Langages">
+            <img src="./images/arrow.png" alt="arrow">
+          </a> 
+        </div>
+      </article>
 
-          <p>Un début de notion block-inline dans la page HTML</p> 
-        </a>
-      </section>
-
-      <section id="Synthetics" class="row">
-        <a class="synthetic offset-1 col-10 offset-lg-1 col-lg-6" href="./langages.html">
-          <div class="row align-items-center justify-content-center">
-            <div class="col-4 col-lg-6 text-center">
-              <img src="./images/logo_html.png" alt="logo HTML">
-            </div>
-            <div class="offset-1 col-6 col-lg-5">
-              <h1>HTML</h1>
+        <main id="Langages" class="main__container">
+          <h1>Langages Web</h1>
+          <a class="synthetic" href="./langages.html">
+            <h1 class="synthetic__title">HTML</h1>
+            <img src="./images/logo_html.png" alt="logo HTML">
+            <div class="synthetic__text">
               <h2>HyperText Markup Language</h2> 
               <hr>
               <p>Structurer une page Web</p> 
-            </div>
-          </div>  
-        </a>
-        <a class="synthetic offset-1 col-10 col-lg-6 offset-lg-5 " href="./langages.html">
-          <div class="row align-items-center justify-content-center">
-            <div class="col-4 col-lg-6 text-center">
-              <img src="./images/logo_css.png" alt="logo CSS">
-            </div>
-            <div class="offset-1 col-6 col-lg-5">
-              <h1>CSS</h1>
+            </div> 
+          </a>
+          <a class="synthetic" href="./langages.html">
+            <h1 class="synthetic__title">CSS</h1>
+            <img src="./images/logo_css.png" alt="logo CSS">
+            <div class="synthetic__text">
               <h2>Cascading Style Sheets</h2>
               <hr> 
               <p>Styliser une page Web</p>
-            </div>
-          </div>  
-        </a>
-        <a class="synthetic offset-1 col-10 offset-lg-1 col-lg-6" href="./langages.html">
-          <div class="row align-items-center justify-content-center">
-            <div class="col-4 col-lg-6 text-center">
-              <img src="./images/logo_sass.png" alt="logo sass">
-            </div>
-            <div class="offset-1 col-6 col-lg-5">
-              <h1>Sass</h1>
+            </div> 
+          </a>
+          <a class="synthetic" href="./langages.html">
+            <h1 class="synthetic__title">Sass</h1>
+            <img src="./images/logo_sass.png" alt="logo sass">
+            <div class="synthetic__text">
               <h2>Syntactically Awesome Style Sheets</h2>
               <hr> 
               <p>Préprocesseur CSS</p>
-            </div>  
-          </div>
-        </a>
-        <a class="synthetic offset-1 col-10 col-lg-6 offset-lg-5 " href="./langages.html">
-          <div class="row align-items-center justify-content-center">
-            <div class="col-4 col-lg-6 text-center">
-              <img src="./images/logo_boostrap.png" alt="logo bootstrap">
-            </div>
-            <div class="offset-1 col-6 col-lg-5">
-              <h1>JavaScript</h1>
+            </div> 
+          </a>
+          <a class="synthetic" href="./langages.html">
+            <h1 class="synthetic__title">JavaScript</h1>
+            <img src="./images/logo_javascript.png" alt="logo JS">
+            <div class="synthetic__text">
               <h2>Object-Oriented Language</h2>
               <hr>
               <p>Dynamiser une page Web</p>
-            </div>
-          </div>
-        </a>
-        <a class="synthetic offset-1 col-10 offset-lg-1 col-lg-6" href="./frameworks.html">
-          <div class="row align-items-center justify-content-center">
-            <div class="col-4 col-lg-6 text-center">
-              <div><img src="./images/logo_javascript.png" alt="logo JS"></div>
-            </div>
-            <div class="offset-1 col-6 col-lg-5">
-              <h1>Bootstrap</h1>
+            </div> 
+          </a>
+        </main>  
+
+        <main id="Frameworks" class="main__container">
+          <h1>Frameworks Front-End</h1>
+          <a class="synthetic" href="./frameworks.html">
+            <h1 class="synthetic__title">BS</h1>
+            <img src="./images/logo_boostrap.png" alt="logo bootstrap">
+            <div class="synthetic__text">
               <h2>Framework Front-End</h2>
               <hr>  
               <p>Mise en page responsive</p>
             </div> 
-          </div>     
-        </a>
-        <a class="synthetic offset-1 col-10 col-lg-6 offset-lg-5" href="./frameworks.html">
-          <div class="row align-items-center justify-content-center">
-            <div class="col-4 col-lg-6 text-center">
+          </a>
+          <a class="synthetic" href="./frameworks.html">
+            <h1 class="synthetic__title">React</h1>
               <img src="./images/logo_react.png" alt="logo react">
-            </div>
-            <div class="offset-1 col-6 col-lg-5">
-              <h1>React</h1>
+            <div class="synthetic__text">
               <h2>JavaScript Library</h2>
               <hr>
               <p>Front-End dynamique</p>
-            </div>
-          </div>
-        </a>
-      </section>
+            </div> 
+          </a>
+        </main>
 
-    </div>
-     
     <footer>
       <a onclick="topFunction()" id="ArrowUP" title="Go to top">
         <img src="./images/arrow.png" alt="arrow">
       </a> 
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
