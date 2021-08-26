@@ -154,9 +154,11 @@ footer a:hover {
   border-radius: 30px;
 }
 
-.main__container {
-  margin: 0 6%;
-  margin-top: 200px;
+#Main {
+  padding-top: 1px;
+}
+#Main .main__container {
+  margin: 100px 6%;
   padding: 80px 0;
   background-color: rgba(7, 7, 7, 0.5);
   display: flex;
@@ -165,7 +167,7 @@ footer a:hover {
   align-content: center;
   border-radius: 30px;
 }
-.main__container > h1 {
+#Main .main__container > h1 {
   font-size: 30px;
   flex-basis: 66%;
   text-align: center;
@@ -175,7 +177,7 @@ footer a:hover {
   padding: 20px 0;
   border-radius: 30px;
 }
-.main__container .synthetic {
+#Main .main__container .synthetic {
   background-color: rgba(2, 3, 8, 0.541);
   border-radius: 30px;
   min-width: 500px;
@@ -185,37 +187,37 @@ footer a:hover {
   display: flex;
   align-items: center;
 }
-.main__container .synthetic > h1 {
+#Main .main__container .synthetic > h1 {
   writing-mode: sideways-lr;
   font-size: 1.2rem;
   margin: auto 0px;
 }
-.main__container .synthetic img {
+#Main .main__container .synthetic img {
   max-width: 110px;
   margin: 0 20px;
 }
-.main__container .synthetic__text {
+#Main .main__container .synthetic__text {
   flex: 1;
   text-align: center;
   padding: 0 10px;
 }
-.main__container .synthetic__text h1, .main__container .synthetic__text h2 {
+#Main .main__container .synthetic__text h1, #Main .main__container .synthetic__text h2 {
   color: white;
   margin: 0;
 }
-.main__container .synthetic__text hr {
+#Main .main__container .synthetic__text hr {
   margin: 10px 0;
 }
-.main__container .synthetic__text p {
+#Main .main__container .synthetic__text p {
   margin: 0;
 }
-.main__container .synthetic:hover {
+#Main .main__container .synthetic:hover {
   background-color: white;
 }
-.main__container .synthetic:hover h1, .main__container .synthetic:hover h2, .main__container .synthetic:hover h3, .main__container .synthetic:hover hr {
+#Main .main__container .synthetic:hover h1, #Main .main__container .synthetic:hover h2, #Main .main__container .synthetic:hover h3, #Main .main__container .synthetic:hover hr {
   color: rgba(63, 60, 60, 0.924);
 }
-.main__container .synthetic:hover p {
+#Main .main__container .synthetic:hover p {
   color: rgba(92, 87, 87, 0.924);
 }
 

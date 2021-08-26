@@ -18,9 +18,24 @@ function Nav() {
   }
 }
 
+/* function scrollo(){
+  $('html, body').animate({
+      scrollTop: $("#div1").offset().top
+  }, 2000);
+});
+
 // When the user clicks on the up arrow at the bottom of the page, it scrolls all to the top of the page
 function topFunction($position) { 
-  document.body.scrollTop = $position; // For Safari
   document.documentElement.scrollTop = $position; // For Chrome, Firefox, IE and Opera
-} 
+  //document.body.scrollTop = $position; // For Safari
+}  */
 
+
+ $("a").on('click', function(event) { // Add smooth scrolling to all links
+    var hash = this.hash;                       // Store hash  
+    $('html, body').animate({                   // Using jQuery's animate() method to add smooth page scroll
+      scrollTop: $(hash).offset().top
+    }, 800, function(){                         // The optional number (800) specifies the delay     
+      window.location.hash = hash;              // Add hash (#) to URL when done scrolling (default click behavior)
+    });
+});
