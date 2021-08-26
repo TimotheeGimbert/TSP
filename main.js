@@ -19,7 +19,8 @@ function Nav() {
 }
 
 // When the user clicks on the up arrow at the bottom of the page, it scrolls all to the top of the page
-function topFunction() { 
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+function topFunction($position) { 
+  document.body.scrollTop = $position; // For Safari
+  document.documentElement.scrollTop = $position; // For Chrome, Firefox, IE and Opera
 } 
+
