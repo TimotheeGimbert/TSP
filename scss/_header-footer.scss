@@ -60,12 +60,12 @@ header {
 
 $nav__txt-size: 18px;
 $nav-transitionTime: 1.25s;
-$nav-paddingRight: 6%;
+$nav-paddingRight: 0%;
 $nav-marginBottom: 20px;
 nav {
   height: 0px;    // This is changed by JavaScript when user clicks on nav icon
   padding-right: $nav-paddingRight; 
-  text-align: end;
+  text-align: center;
   overflow-y: hidden;
   transition: $nav-transitionTime;   
   a { 

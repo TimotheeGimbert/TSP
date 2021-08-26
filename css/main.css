@@ -99,8 +99,8 @@ header button:hover h3 {
 
 nav {
   height: 0px;
-  padding-right: 6%;
-  text-align: end;
+  padding-right: 0%;
+  text-align: center;
   overflow-y: hidden;
   transition: 1.25s;
 }
