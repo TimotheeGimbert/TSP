@@ -201,6 +201,7 @@ footer a:hover {
 }
 .main__container .synthetic__text h1, .main__container .synthetic__text h2 {
   color: white;
+  margin-top: 0;
 }
 .main__container .synthetic__text p {
   margin: 0;
