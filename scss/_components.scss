@@ -33,16 +33,29 @@ h1 {
   font-family: 'Trirong', serif;
   font-size: 1.6em;
 }
-h2 {font-size: 1.2em;}
-h3 {font-size: 1em;
-  font-family: 'Trirong', serif;}
-p {font-size: 0.9em;}
+h2 {
+  font-size: 1.2em;
+}
+h3 {
+  font-size: 1em;
+  font-family: 'Trirong', serif;
+}
+p {
+  font-size: 0.9em;
+}
 
 @media all and (max-width: $breakpoint) {
-  h1, h3 {
-    font-size: 110%;
-  } 
+  
+  h1 {
+    font-size: 1.8em;
+  }
+  h2 {
+    font-size: 1.6em;
+  }
+  h3 {
+    font-size: 1.4em;
+  }
   p {
-    font-size: 150%;
+    font-size: 1.2em;
   }
 }

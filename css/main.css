@@ -53,12 +53,20 @@ p {
 }
 
 @media all and (max-width: 1300px) {
-  h1, h2 {
-    font-size: 125%;
+  h1 {
+    font-size: 1.8em;
   }
 
-  h3, p {
-    font-size: 150%;
+  h2 {
+    font-size: 1.6em;
+  }
+
+  h3 {
+    font-size: 1.4em;
+  }
+
+  p {
+    font-size: 1.2em;
   }
 }
 header {
