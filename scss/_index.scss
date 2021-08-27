@@ -22,6 +22,7 @@ $bubble__icon-width: 60px;
     a {
       img {
         width: $bubble__icon-width;
+        margin-top: 20px;
         transform: rotate(180deg);
         &:hover {
           background-color: $bg-light;
