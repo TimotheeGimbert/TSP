@@ -8,7 +8,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  font-family: "Trirong", serif;
+  font-family: "Roboto", sans-serif;
 }
 
 a:link {
@@ -30,6 +30,7 @@ hr, p {
 }
 
 h1 {
+  font-family: "Trirong", serif;
   font-size: 1.6em;
 }
 
@@ -55,7 +56,8 @@ header a {
   text-decoration: none;
 }
 header a img {
-  width: 85px;
+  width: 90px;
+  height: 90px;
 }
 header a h1 {
   color: rgba(206, 206, 206, 0.74);
@@ -94,6 +96,18 @@ header button:hover h3 {
 @media all and (max-width: 1300px) {
   header button h3 {
     display: none;
+  }
+}
+@media all and (max-width: 1300px) {
+  header a {
+    padding: 0;
+  }
+  header a img {
+    width: 117px;
+    height: 117px;
+  }
+  header a h1 {
+    font-size: 1.56rem;
   }
 }
 
@@ -138,10 +152,14 @@ footer a:hover {
 .article__container .bubble {
   flex-basis: 40%;
   min-width: 450px;
+  margin: 0 6%;
   padding: 6%;
   border: 3px solid white;
   border-radius: 30px;
   text-align: center;
+}
+.article__container .bubble p {
+  color: white;
 }
 .article__container .bubble a img {
   width: 60px;

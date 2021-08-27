@@ -11,7 +11,7 @@ body {
   background-size: cover;
 
   //font-family: 'Aldrich', sans-serif;
-  font-family: 'Trirong', serif;
+  font-family: 'Roboto', sans-serif;
 }
 a { 
   &:link {text-decoration: none !important;}
@@ -22,9 +22,13 @@ h1, h2, h3 {
   color: $txt-color-primary;
 }
 hr, p {
+  //font-family: 'Trirong', serif;
   color: $txt-color-secondary;
 }
-h1 {font-size: 1.6em;}
+h1 {
+  font-family: 'Trirong', serif;
+  font-size: 1.6em;
+}
 h2 {font-size: 1.2em;}
 h3 {font-size: 1em;}
 p {font-size: 0.9em;}

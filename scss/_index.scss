@@ -1,3 +1,4 @@
+
 $bubble-width: 40%;
 $bubble-padding: 6%;
 $bubble-border-size: 3px;
@@ -10,10 +11,14 @@ $bubble__icon-width: 60px;
   .bubble {
     flex-basis: $bubble-width;
     min-width: 450px;
+    margin: 0 $margin-primary;
     padding: $bubble-padding;
     border: $bubble-border-size solid $txt-color-primary;
     border-radius: $border-radius;
     text-align: $bubble__txt-align;
+    p {
+      color: $txt-color-primary;
+    }
     a {
       img {
         width: $bubble__icon-width;
@@ -30,7 +35,7 @@ $bubble__icon-width: 60px;
 #Main {
   padding-top: 100px;
   .main__container {
-    margin: 100px 6%;
+    margin: 100px $margin-primary;
     padding: 80px 0;
     background-color: rgba(7, 7, 7, 0.5);
     display: flex;
@@ -98,7 +103,7 @@ $bubble__icon-width: 60px;
   .article__container {
       .bubble {
       flex: 1;
-      padding-bottom: 6%;
+      padding-bottom: $margin-primary;
       margin-bottom: 0;
       a {
         display: none;
