@@ -39,10 +39,10 @@ h3 {font-size: 1em;
 p {font-size: 0.9em;}
 
 @media all and (max-width: $breakpoint) {
-  h1, h2 {
+  h1, h3 {
     font-size: 110%;
   } 
-  h3, p {
+  p {
     font-size: 150%;
   }
 }
