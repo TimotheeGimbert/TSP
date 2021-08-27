@@ -13,6 +13,10 @@ body {
   //font-family: 'Aldrich', sans-serif;
   font-family: 'Roboto', sans-serif;
 }
+button {
+  background-color: transparent;
+  border-color: transparent;
+}
 a { 
   &:link {text-decoration: none !important;}
   &:visited {text-decoration: none !important;}
@@ -30,5 +34,6 @@ h1 {
   font-size: 1.6em;
 }
 h2 {font-size: 1.2em;}
-h3 {font-size: 1em;}
+h3 {font-size: 1em;
+  font-family: 'Trirong', serif;}
 p {font-size: 0.9em;}

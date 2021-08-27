@@ -1,0 +1,12 @@
+@mixin STYLE_strip1(){
+    background-color: $bg-dark;
+    border-radius: $border-radius;
+    border: 1px solid $bg-dark;
+}
+
+@mixin STYLE_strip1_hover(){
+    background-color: white;
+    h1 {
+      color: rgb(47, 47, 47);
+    }
+}

@@ -1,3 +1,7 @@
+function OpenHidden() {
+  document.getElementById("Intro__View1").style.height = "300px";
+}
+
 
 // Function that opens and closes the navbar
 var navOpen = false;

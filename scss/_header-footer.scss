@@ -10,6 +10,7 @@ header {
     flex: 1;
     display: flex; 
     text-decoration: none;
+    margin-right: $margin-primary;
     img {
       width: $header__img-size;
       height: $header__img-size;
@@ -35,8 +36,6 @@ header {
   }
   button { 
     align-self: center;
-    background-color: transparent;
-    border-color: transparent;
     img {
       width: $header__button-width;
     }
@@ -73,7 +72,6 @@ header {
 
 
 $nav__txt-size: 18px;
-$nav-transitionTime: 1.25s;
 $nav-paddingRight: 0%;
 $nav-marginBottom: 20px;
 nav {
@@ -81,7 +79,7 @@ nav {
   padding-right: $nav-paddingRight; 
   text-align: center;
   overflow-y: hidden;
-  transition: $nav-transitionTime;   
+  transition: $transition-time;   
   a { 
     display: block;
     font-size: $nav__txt-size;
@@ -109,7 +107,7 @@ footer {
       width: $footer__img-width;
     }
     &:hover {
-      background-color: $bg-light;
+      background-color: $bg-dark;
     }
   }
 }

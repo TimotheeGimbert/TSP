@@ -1,43 +1,44 @@
 
-$bubble-width: 40%;
-$bubble-padding: 6%;
-$bubble-border-size: 3px;
-$bubble__txt-align: center;
-$bubble__icon-width: 60px;
-.article__container { 
-  display: flex;
-  justify-content: center;
+$bubble-width: 60%;
 
-  .bubble {
-    flex-basis: $bubble-width;
-    min-width: 450px;
-    margin: 0 $margin-primary;
-    padding: $bubble-padding;
-    border: $bubble-border-size solid $txt-color-primary;
-    border-radius: $border-radius;
-    text-align: $bubble__txt-align;
-    p {
-      color: $txt-color-primary;
-    }
-    a {
-      img {
-        width: $bubble__icon-width;
-        margin-top: 20px;
-        transform: rotate(180deg);
-        &:hover {
-          background-color: $bg-light;
-          border-radius: $border-radius;
-        }
+$bubble-border-size: 3px;
+$intro__icon-width: 60px;
+#Intro { // <SECTION>
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 333px;
+  * {
+    color: $txt-color-primary;
+  }
+  hr {
+    margin: 20px $margin-primary;
+  }
+  button, a {
+    img {
+      width: 30px;
+      margin: 20px 0;
+      &:hover {
+        background-color: $bg-dark;
+        border-radius: $border-radius;
       }
     }
   }
+
+  &__View1 {
+    height: 0px; // changed by javascript on click
+    overflow-y: hidden;
+    transition: $transition-time;
+  }
 }
 
-#Main {
-  padding-top: 100px;
+
+#Main { // <MAIN>
+  padding-top: 1px;
   .main__container {
     margin: 100px $margin-primary;
-    padding: 80px 0;
+    padding: 60px 0;
     background-color: rgba(7, 7, 7, 0.5);
     display: flex;
     flex-wrap: wrap;
@@ -45,20 +46,23 @@ $bubble__icon-width: 60px;
     align-content: center;
     border-radius: $border-radius;
   
-    > h1 {
-      font-size: 30px;
-      flex-basis: 66%;
-      text-align: center;
-      background-color: white;
-      color: rgb(47, 47, 47);
+    > a {
+      flex-basis: 90%;
       margin-bottom: 80px;
       padding: 20px 0;
-      border-radius: $border-radius;
+      @include STYLE_strip1();
+      h1 {
+        font-size: 30px;
+        text-align: center;
+        color: $txt-color-primary;        
+      }
+      &:hover {
+        @include STYLE_strip1_hover();
+      }
     }
   
     .synthetic {
-      background-color: $bg-dark;
-      border-radius: $border-radius;
+      
       min-width: 500px;
       margin-bottom: 40px;
       padding: 30px 20px;
@@ -101,15 +105,9 @@ $bubble__icon-width: 60px;
 
 
 @media all and (max-width: $breakpoint) {
-  .article__container {
-      .bubble {
-      flex: 1;
-      padding-bottom: $margin-primary;
-      margin-bottom: 0;
-      a {
-        display: none;
-      }
-    }
+  #Intro {
+    margin-bottom: 0;
+    padding: 6%;
   }
 
   #Main {

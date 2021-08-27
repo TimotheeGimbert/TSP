@@ -11,6 +11,11 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+button {
+  background-color: transparent;
+  border-color: transparent;
+}
+
 a:link {
   text-decoration: none !important;
 }
@@ -40,6 +45,7 @@ h2 {
 
 h3 {
   font-size: 1em;
+  font-family: "Trirong", serif;
 }
 
 p {
@@ -54,6 +60,7 @@ header a {
   flex: 1;
   display: flex;
   text-decoration: none;
+  margin-right: 6%;
 }
 header a img {
   width: 90px;
@@ -77,8 +84,6 @@ header a:hover h1 span {
 }
 header button {
   align-self: center;
-  background-color: transparent;
-  border-color: transparent;
 }
 header button img {
   width: 40px;
@@ -142,41 +147,42 @@ footer a img {
   width: 60px;
 }
 footer a:hover {
-  background-color: rgba(255, 255, 255, 0.459);
+  background-color: rgba(2, 3, 8, 0.541);
 }
 
-.article__container {
+#Intro {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-}
-.article__container .bubble {
-  flex-basis: 40%;
-  min-width: 450px;
-  margin: 0 6%;
-  padding: 6%;
-  border: 3px solid white;
-  border-radius: 30px;
   text-align: center;
+  margin-bottom: 333px;
 }
-.article__container .bubble p {
+#Intro * {
   color: white;
 }
-.article__container .bubble a img {
-  width: 60px;
-  margin-top: 20px;
-  transform: rotate(180deg);
+#Intro hr {
+  margin: 20px 6%;
 }
-.article__container .bubble a img:hover {
-  background-color: rgba(255, 255, 255, 0.459);
+#Intro button img, #Intro a img {
+  width: 30px;
+  margin: 20px 0;
+}
+#Intro button img:hover, #Intro a img:hover {
+  background-color: rgba(2, 3, 8, 0.541);
   border-radius: 30px;
+}
+#Intro__View1 {
+  height: 0px;
+  overflow-y: hidden;
+  transition: 1.25s;
 }
 
 #Main {
-  padding-top: 100px;
+  padding-top: 1px;
 }
 #Main .main__container {
   margin: 100px 6%;
-  padding: 80px 0;
+  padding: 60px 0;
   background-color: rgba(7, 7, 7, 0.5);
   display: flex;
   flex-wrap: wrap;
@@ -184,19 +190,26 @@ footer a:hover {
   align-content: center;
   border-radius: 30px;
 }
-#Main .main__container > h1 {
-  font-size: 30px;
-  flex-basis: 66%;
-  text-align: center;
-  background-color: white;
-  color: #2f2f2f;
+#Main .main__container > a {
+  flex-basis: 90%;
   margin-bottom: 80px;
   padding: 20px 0;
-  border-radius: 30px;
-}
-#Main .main__container .synthetic {
   background-color: rgba(2, 3, 8, 0.541);
   border-radius: 30px;
+  border: 1px solid rgba(2, 3, 8, 0.541);
+}
+#Main .main__container > a h1 {
+  font-size: 30px;
+  text-align: center;
+  color: white;
+}
+#Main .main__container > a:hover {
+  background-color: white;
+}
+#Main .main__container > a:hover h1 {
+  color: #2f2f2f;
+}
+#Main .main__container .synthetic {
   min-width: 500px;
   margin-bottom: 40px;
   padding: 30px 20px;
@@ -239,13 +252,9 @@ footer a:hover {
 }
 
 @media all and (max-width: 1300px) {
-  .article__container .bubble {
-    flex: 1;
-    padding-bottom: 6%;
+  #Intro {
     margin-bottom: 0;
-  }
-  .article__container .bubble a {
-    display: none;
+    padding: 6%;
   }
 
   #Main {

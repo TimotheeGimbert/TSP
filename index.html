@@ -8,14 +8,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Trirong:wght@200&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">  
     <link rel="icon" href="./images/logo.png">
-    <title>TSP | The Synthetic Project</title>
+    <title>The Synthetic Way</title>
   </head>
   <body>
 
     <header id="Header">
       <a href="./index.html"> 
         <img src="./images/logo.png" alt="logo">
-        <h1><span>T</span>he <span>S</span>ynthetic <span>P</span>roject</h1>
+        <h1><span>T</span>he <span>S</span>ynthetic <span>W</span>ay</h1>
       </a>
       <button onclick="Nav()">
         <img src="./images/menu.png" alt="menu">
@@ -28,21 +28,43 @@
       <a href="#Frameworks">Frameworks Front-End</a>
     </nav>
     
-    <article id="Intro" class="article__container">
-      <div class="bubble" href="#Langages">
-        <h1>The Synthetic Project c'est ...</h1>
-        <p>... une petite base de données naissante qui souhaite synthétiser des notions clés du développement Web.</p>
+    <section id="Intro" class="section-intro">
+      <article id="Intro__View0" class="intro__view">
+        <h1>The Synthetic Way c'est ...</h1>
         <hr>
-        <p>Ce projet est expérimental et devrait s'enrichir progressivement !</p>
-        <a href="#Main" title="Go to #Langages">
-          <img src="./images/arrow.png" alt="arrow">
-        </a> 
-      </div>
-    </article>
+        <h3>... une base de données naissante visant à synthétiser des notions clés du développement Web.</h3> 
+        <h3>C'est un peu un site web sur ... ' Comment Faire Un Site Web ? ' ... !</h3>
+        <button onclick="OpenHidden()">
+          <img src="./images/plus.png" alt="viewPlus1">
+        </button>  
+      </article>
 
+      <aside id="Intro__View1" class="intro__view">
+        <hr>
+        <p>
+          On trouve à ce sujet déjà de très bonnes ressources, nombreuses sur le web, mais la variété des méthodes peut rendre difficile la première approche pour un développeur novice.
+          <br><br>
+          The Synthetic Way vise à condenser les informations clés, pour proposer une approche minimaliste et objectiviste du développement web basique mais moderne.
+          <br><br>
+          Tout cela n'est encore qu'un exercice personnel, peut-être éphemère, qui fait parti de mon auto-formation de développeur justement, donc ce site se construit doucement !
+        </p>
+        <a href="#Main" title="Go to #Langages">
+          <img src="./images/arrowDown.png" alt="viewPlus2">
+        </a> 
+      </aside>
+
+      <aside id="Intro__View2" class="intro__view">
+
+      </aside>
+      
+    </section>
+    
+      
     <main id="Main">
       <section id="Langages" class="main__container">
-        <h1>Langages Web</h1>
+        <a class="synthetic-heading" href="langages.html">
+          <h1>Langages Web</h1>
+        </a>  
         <a class="synthetic" href="./langages.html">
           <h1 class="synthetic__title">HTML</h1>
           <img src="./images/logo_html.png" alt="logo HTML">
@@ -82,7 +104,9 @@
       </section>
 
       <section id="Frameworks" class="main__container">
-        <h1>Frameworks Front-End</h1>
+        <a class="synthetic-heading" href="frameworks.html">
+          <h1>Frameworks Front-End</h1>
+        </a> 
         <a class="synthetic" href="./frameworks.html">
           <h1 class="synthetic__title">BS</h1>
           <img src="./images/logo_boostrap.png" alt="logo bootstrap">
@@ -106,7 +130,7 @@
 
     <footer>
       <a href="#Header">
-        <img src="./images/arrow.png" alt="arrow">
+        <img src="./images/arrowUp.png" alt="arrowUp">
       </a> 
     </footer>
 
