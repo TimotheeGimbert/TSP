@@ -52,6 +52,15 @@ p {
   font-size: 0.9em;
 }
 
+@media all and (max-width: 1300px) {
+  h1, h2 {
+    font-size: 125%;
+  }
+
+  h3, p {
+    font-size: 150%;
+  }
+}
 header {
   display: flex;
   padding: 6%;

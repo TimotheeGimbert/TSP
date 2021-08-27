@@ -37,3 +37,12 @@ h2 {font-size: 1.2em;}
 h3 {font-size: 1em;
   font-family: 'Trirong', serif;}
 p {font-size: 0.9em;}
+
+@media all and (max-width: $breakpoint) {
+  h1, h2 {
+    font-size: 125%;
+  } 
+  h3, p {
+    font-size: 150%;
+  }
+}
