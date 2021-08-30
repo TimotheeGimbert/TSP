@@ -1,25 +1,25 @@
-$header__img-size: 90px;
+
 $header__title-size: 1.2rem;
 $header__title-marginLeft: 22px; 
 $header__button-width: 40px;
 header {
-
   display: flex;
   padding: $margin-primary;
   a {
     flex: 1;
-    display: flex; 
-    text-decoration: none;
-    margin-right: $margin-primary;
+    display: flex;
+    margin-right: 11%;
+    text-decoration: none;  
+    align-items: center;
     img {
       width: $header__img-size;
       height: $header__img-size;
     }
     h1 {
-      color: $txt-color-secondary;
-      font-size: $header__title-size;
       align-self: center;
       margin-left: $header__title-marginLeft;
+      color: $txt-color-secondary;
+      font-size: $header__title-size;
       span {
         color: $txt-color-primary;
         font-size: (2*$header__title-size);

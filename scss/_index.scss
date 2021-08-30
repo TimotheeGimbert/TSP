@@ -1,126 +1,31 @@
-
-$bubble-width: 60%;
-
-$bubble-border-size: 3px;
-$intro__icon-width: 60px;
-#Intro { // <SECTION>
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  margin-bottom: 333px;
-  * {
-    color: $txt-color-primary;
-  }
-  hr {
-    margin: 20px $margin-primary;
-  }
-  button, a {
-    img {
-      width: 30px;
-      margin: 20px 0;
-      &:hover {
-        background-color: $bg-dark;
-        border-radius: $border-radius;
-      }
-    }
-  }
-
-  &__View1 {
-    height: 0px; // changed by javascript on click
-    overflow-y: hidden;
-    transition: $transition-time;
-  }
+article#Container-A {
+  margin-bottom: 400px;
 }
 
-
-#Main { // <MAIN>
-  padding-top: 1px;
-  .main__container {
-    margin: 100px $margin-primary;
-    padding: 60px 0;
-    background-color: rgba(7, 7, 7, 0.5);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-content: center;
-    border-radius: $border-radius;
-  
-    > a {
-      flex-basis: 90%;
-      margin-bottom: 80px;
-      padding: 20px 0;
-      @include STYLE_strip1();
-      h1 {
-        font-size: 30px;
-        text-align: center;
-        color: $txt-color-primary;        
-      }
-      &:hover {
-        @include STYLE_strip1_hover();
-      }
-    }
-  
-    .synthetic {
-      
-      min-width: 500px;
-      margin-bottom: 40px;
-      padding: 30px 20px;
-    
-      flex-basis: 41%;
-      display: flex;
-      align-items: center;
-  
-      & > h1 {
-        writing-mode: sideways-lr;
-        font-size: 1.2rem;
-        margin: auto 0px;
-      }
-  
-      img {
-        max-width: 110px;
-        margin: 0 20px;
-      }
-  
-      &__text {
-        flex: 1;
-        text-align: center;
-        padding: 0 10px;
-        h1, h2 { 
-          color: $txt-color-primary; 
-          margin: 0;
-        }
-        hr {margin: 10px 0;}
-        p {margin: 0;}
-      }
-      
-      &:hover {
-        background-color: $txt-color-primary;
-        h1, h2, h3, hr { color: $txt-color-dark; }
-        p { color: $txt-color-secondary--strong; }
-      }
-    }
+main#Container-B {
+  display: flex;    
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  a.synthetic {
+    min-width: 500px;
+    margin-bottom: 80px;
   }
 }
-
 
 @media all and (max-width: $breakpoint) {
-  #Intro {
-    margin-bottom: 0;
-    padding: 6%;
+  article#Container-A {
+    margin-bottom: 100px;
+    .intro {
+      margin-left: 11%;
+      margin-right: 11%;
+      p {
+        font-size: 1em;
+      }
+    }
   }
-
-  #Main {
-    padding-top: 0;
-    .main__container {
-      > h1 {
-        font-size: 1.4em;
-        flex-basis: 66%;
-        padding: 10px;
-      }
-      .synthetic {
-        flex-basis: 80%;
-      }
+  main#Container-B {
+    a.synthetic {
+      flex-basis: 75%;
     }
   }
 }

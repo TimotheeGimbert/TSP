@@ -1,7 +1,7 @@
 body {
-  height: 100%;       // need to search for the real convenience of that
-  margin: 0;          // need to search for the real convenience of that
-  padding: 0;         // need to search for the real convenience of that
+  height: 100%;       
+  margin: 0;        
+  padding: 0;         
 
   background-color: $bg-dark;
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.0)), url("../images/background_minimized.png");
@@ -10,7 +10,6 @@ body {
   background-attachment: fixed;
   background-size: cover;
 
-  //font-family: 'Aldrich', sans-serif;
   font-family: 'Roboto', sans-serif;
 }
 button {
@@ -22,11 +21,10 @@ a {
   &:visited {text-decoration: none !important;}
   &:active {text-decoration: none !important;}
 }
-h1, h2, h3 {
+h1, h2, h3, p {
   color: $txt-color-primary;
 }
-hr, p {
-  //font-family: 'Trirong', serif;
+hr {
   color: $txt-color-secondary;
 }
 h1 {
@@ -44,18 +42,59 @@ p {
   font-size: 0.9em;
 }
 
-@media all and (max-width: $breakpoint) {
-  
-  h1 {
-    font-size: 1.8em;
+.button-page {
+  img {
+    width: 30px;
+    margin: 10px;
+    border-radius: $border-radius;
+    &:hover {
+      background-color: $bg-dark;
+    }
   }
-  h2 {
-    font-size: 1.6em;
+}
+
+.intro {
+  text-align: center;
+  color: $txt-color-primary;
+  &--hidden {
+    height: 0px; // changed by javascript on click
+    overflow-y: hidden;
+    transition: $transition-time;
   }
-  h3 {
-    font-size: 1.4em;
+}
+
+.synthetic {  
+  padding: 30px 20px;
+  flex-basis: 41%;
+  display: flex;
+  align-items: center;
+  @include STYLE_strip1();
+  & > h1 {
+    writing-mode: sideways-lr;
+    font-size: 1.2rem;
+    margin: auto 0px;
   }
-  p {
-    font-size: 1.2em;
+  img {
+    max-width: 110px;
+    margin: 0 20px;
+  }
+  &__text {
+    flex: 1;
+    text-align: center;
+    padding: 0 10px;
+    h1, h2 { 
+      color: $txt-color-primary; 
+      margin: 0;
+    }
+    hr {
+      margin: 10px 0;
+    }
+    p {
+      margin: 0;
+      color: $txt-color-secondary;
+    }
+  }
+  &:hover {
+    @include STYLE_strip1_hover();
   }
 }

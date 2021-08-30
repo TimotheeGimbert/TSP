@@ -26,11 +26,11 @@ a:active {
   text-decoration: none !important;
 }
 
-h1, h2, h3 {
+h1, h2, h3, p {
   color: white;
 }
 
-hr, p {
+hr {
   color: rgba(206, 206, 206, 0.74);
 }
 
@@ -52,23 +52,72 @@ p {
   font-size: 0.9em;
 }
 
-@media all and (max-width: 1300px) {
-  h1 {
-    font-size: 1.8em;
-  }
-
-  h2 {
-    font-size: 1.6em;
-  }
-
-  h3 {
-    font-size: 1.4em;
-  }
-
-  p {
-    font-size: 1.2em;
-  }
+.button-page img {
+  width: 30px;
+  margin: 10px;
+  border-radius: 30px;
 }
+.button-page img:hover {
+  background-color: rgba(2, 3, 8, 0.541);
+}
+
+.intro {
+  text-align: center;
+  color: white;
+}
+.intro--hidden {
+  height: 0px;
+  overflow-y: hidden;
+  transition: 1.25s;
+}
+
+.synthetic {
+  padding: 30px 20px;
+  flex-basis: 41%;
+  display: flex;
+  align-items: center;
+  background-color: rgba(2, 3, 8, 0.541);
+  border-radius: 30px;
+  border: 1px solid rgba(2, 3, 8, 0.541);
+}
+.synthetic > h1 {
+  writing-mode: sideways-lr;
+  font-size: 1.2rem;
+  margin: auto 0px;
+}
+.synthetic img {
+  max-width: 110px;
+  margin: 0 20px;
+}
+.synthetic__text {
+  flex: 1;
+  text-align: center;
+  padding: 0 10px;
+}
+.synthetic__text h1, .synthetic__text h2 {
+  color: white;
+  margin: 0;
+}
+.synthetic__text hr {
+  margin: 10px 0;
+}
+.synthetic__text p {
+  margin: 0;
+  color: rgba(206, 206, 206, 0.74);
+}
+.synthetic:hover {
+  background-color: white;
+}
+.synthetic:hover h1, .synthetic:hover h2 {
+  color: #2f2f2f;
+}
+.synthetic:hover h3, .synthetic:hover hr {
+  color: rgba(63, 60, 60, 0.924);
+}
+.synthetic:hover p {
+  color: rgba(92, 87, 87, 0.924);
+}
+
 header {
   display: flex;
   padding: 6%;
@@ -76,18 +125,19 @@ header {
 header a {
   flex: 1;
   display: flex;
+  margin-right: 11%;
   text-decoration: none;
-  margin-right: 6%;
+  align-items: center;
 }
 header a img {
   width: 90px;
   height: 90px;
 }
 header a h1 {
-  color: rgba(206, 206, 206, 0.74);
-  font-size: 1.2rem;
   align-self: center;
   margin-left: 22px;
+  color: rgba(206, 206, 206, 0.74);
+  font-size: 1.2rem;
 }
 header a h1 span {
   color: white;
@@ -167,123 +217,34 @@ footer a:hover {
   background-color: rgba(2, 3, 8, 0.541);
 }
 
-#Intro {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  margin-bottom: 333px;
-}
-#Intro * {
-  color: white;
-}
-#Intro hr {
-  margin: 20px 6%;
-}
-#Intro button img, #Intro a img {
-  width: 30px;
-  margin: 20px 0;
-}
-#Intro button img:hover, #Intro a img:hover {
-  background-color: rgba(2, 3, 8, 0.541);
-  border-radius: 30px;
-}
-#Intro__View1 {
-  height: 0px;
-  overflow-y: hidden;
-  transition: 1.25s;
+article#Container-A {
+  margin-bottom: 400px;
 }
 
-#Main {
-  padding-top: 1px;
-}
-#Main .main__container {
-  margin: 100px 6%;
-  padding: 60px 0;
-  background-color: rgba(7, 7, 7, 0.5);
+main#Container-B {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: space-evenly;
-  align-content: center;
-  border-radius: 30px;
 }
-#Main .main__container > a {
-  flex-basis: 90%;
-  margin-bottom: 80px;
-  padding: 20px 0;
-  background-color: rgba(2, 3, 8, 0.541);
-  border-radius: 30px;
-  border: 1px solid rgba(2, 3, 8, 0.541);
-}
-#Main .main__container > a h1 {
-  font-size: 30px;
-  text-align: center;
-  color: white;
-}
-#Main .main__container > a:hover {
-  background-color: white;
-}
-#Main .main__container > a:hover h1 {
-  color: #2f2f2f;
-}
-#Main .main__container .synthetic {
+main#Container-B a.synthetic {
   min-width: 500px;
-  margin-bottom: 40px;
-  padding: 30px 20px;
-  flex-basis: 41%;
-  display: flex;
-  align-items: center;
-}
-#Main .main__container .synthetic > h1 {
-  writing-mode: sideways-lr;
-  font-size: 1.2rem;
-  margin: auto 0px;
-}
-#Main .main__container .synthetic img {
-  max-width: 110px;
-  margin: 0 20px;
-}
-#Main .main__container .synthetic__text {
-  flex: 1;
-  text-align: center;
-  padding: 0 10px;
-}
-#Main .main__container .synthetic__text h1, #Main .main__container .synthetic__text h2 {
-  color: white;
-  margin: 0;
-}
-#Main .main__container .synthetic__text hr {
-  margin: 10px 0;
-}
-#Main .main__container .synthetic__text p {
-  margin: 0;
-}
-#Main .main__container .synthetic:hover {
-  background-color: white;
-}
-#Main .main__container .synthetic:hover h1, #Main .main__container .synthetic:hover h2, #Main .main__container .synthetic:hover h3, #Main .main__container .synthetic:hover hr {
-  color: rgba(63, 60, 60, 0.924);
-}
-#Main .main__container .synthetic:hover p {
-  color: rgba(92, 87, 87, 0.924);
+  margin-bottom: 80px;
 }
 
 @media all and (max-width: 1300px) {
-  #Intro {
-    margin-bottom: 0;
-    padding: 6%;
+  article#Container-A {
+    margin-bottom: 100px;
+  }
+  article#Container-A .intro {
+    margin-left: 11%;
+    margin-right: 11%;
+  }
+  article#Container-A .intro p {
+    font-size: 1em;
   }
 
-  #Main {
-    padding-top: 0;
-  }
-  #Main .main__container > h1 {
-    font-size: 1.4em;
-    flex-basis: 66%;
-    padding: 10px;
-  }
-  #Main .main__container .synthetic {
-    flex-basis: 80%;
+  main#Container-B a.synthetic {
+    flex-basis: 75%;
   }
 }
 .concept {

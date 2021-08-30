@@ -6,7 +6,13 @@
 
 @mixin STYLE_strip1_hover(){
     background-color: white;
-    h1 {
+    h1, h2 {
       color: rgb(47, 47, 47);
+    }
+    h3, hr { 
+      color: $txt-color-dark; 
+    }
+    p { 
+      color: $txt-color-secondary--strong; 
     }
 }

@@ -1,15 +1,15 @@
 function OpenHidden() {
-  document.getElementById("Intro__View1").style.height = "300px";
+  document.getElementById("Intro__HiddenMsg").style.height = "300px";
 }
 
 
 // Function that opens and closes the navbar
 var navOpen = false;
 function OpenNav() {
-  document.getElementById("Nav-list").style.height = "190px";
+  document.getElementById("Nav").style.height = "190px";
 }
 function CloseNav() {  
-  document.getElementById("Nav-list").style.height = "0";
+  document.getElementById("Nav").style.height = "0";
 }
 function Nav() {
   if (navOpen === false) {
