@@ -22,7 +22,8 @@ function Nav() {
   }
 }
 
- $("a").on('click', function(event) {   // Add smooth scrolling to all links
+
+ $("a").on('click', function(event) {           // Add smooth scrolling to all links
     var hash = this.hash;                       // Store hash  
     $('html, body').animate({                   // Using jQuery's animate() method to add smooth page scroll
       scrollTop: $(hash).offset().top

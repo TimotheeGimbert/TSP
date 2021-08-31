@@ -12,29 +12,27 @@
   </head>
   <body>
 
+    <header id="Header">
+      <a href="./index.html"> 
+        <img src="./images/logo.png" alt="logo">
+        <h1><span>T</span>he <span>S</span>ynthetic <span>W</span>ay</h1>
+      </a>
+      <button onclick="Nav()">
+        <img src="./images/menu.png" alt="menu">
+        <h3>menu</h3>
+      </button>
+    </header>
+    <nav id="Nav">
+      <a href="./index.html">Accueil</a>
+      <a href="./langages.html">Langages Web</a>
+      <a href="./frameworks.html">Frameworks Front-End</a>
+    </nav>
+
     <article id="Container-A">
-      <header>
-        <a href="./index.html"> 
-          <img src="./images/logo.png" alt="logo">
-          <h1><span>T</span>he <span>S</span>ynthetic <span>W</span>ay</h1>
-        </a>
-        <button onclick="Nav()">
-          <img src="./images/menu.png" alt="menu">
-          <h3>menu</h3>
-        </button>
-      </header>
-
-      <nav id="Nav">
-        <a href="./index.html">Accueil</a>
-        <a href="./langages.html">Langages Web</a>
-        <a href="./frameworks.html">Frameworks Front-End</a>
-      </nav>
-
       <div class="intro">
         <h1>The Synthetic Way c'est ...</h1>
         <hr>
-        <h3>... une base de données naissante visant à synthétiser des notions clés du développement Web.</h3>
-        <h3>C'est un peu un site web sur ... ' Comment Faire Un Site Web ? ' ... !</h3>
+        <h3>... une expérience naissante visant à synthétiser quelques notions clés du développement Web.</h3>
         <button class="button-page" onclick="OpenHidden()">
           <img src="./images/plus.png" alt="view more">
         </button>
@@ -42,9 +40,9 @@
 
       <div id="Intro__HiddenMsg" class="intro intro--hidden">
         <p>
-          On trouve à ce sujet déjà de très bonnes ressources, nombreuses sur le web. The Synthetic Way vise à condenser les informations clés afin de partager une vision d'ensemble.
+          On trouve de très nombreuses ressources sur le web. The Synthetic Way souhaite en présenter certaines avec minimalisme.
           <br><br>
-          Tout cela n'est encore qu'un exercice personnel, peut-être éphemère, qui fait parti de mon auto-formation de développeur justement, donc ce site se construit doucement !
+          Tout cela n'est encore qu'un exercice personnel qui fait parti de ma formation de développeur, et ce site se construit doucement !
         </p>
         <a class="button-page" href="#Container-B">
           <img src="./images/arrowDown.png" alt="go down to langages">
@@ -115,7 +113,7 @@
     </main>
 
     <footer>
-      <a href="#Container-A">
+      <a href="#Header">
         <img src="./images/arrowUp.png" alt="arrowUp">
       </a> 
     </footer>

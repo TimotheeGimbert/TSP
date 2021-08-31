@@ -94,6 +94,7 @@ p {
       color: $txt-color-secondary;
     }
   }
+  transition: all 300ms;
   &:hover {
     @include STYLE_strip1_hover();
   }
