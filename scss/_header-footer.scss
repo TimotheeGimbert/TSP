@@ -28,9 +28,12 @@ header {
     transition: transform 2000ms;
     &:hover { 
       transform: scale(1.05);
+      
       h1 {
+        
         color: $txt-color-primary;
         span {
+          transition: color 1000ms;
           color: $txt-color-secondary;
         }
       }

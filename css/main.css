@@ -152,6 +152,7 @@ header a:hover h1 {
   color: white;
 }
 header a:hover h1 span {
+  transition: color 1000ms;
   color: rgba(206, 206, 206, 0.74);
 }
 header button {
