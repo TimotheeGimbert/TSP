@@ -6,7 +6,7 @@ function OpenHidden() {
 // Function that opens and closes the navbar
 var navOpen = false;
 function OpenNav() {
-  document.getElementById("Nav").style.height = "190px";
+  document.getElementById("Nav").style.height = "220px";
 }
 function CloseNav() {  
   document.getElementById("Nav").style.height = "0";
