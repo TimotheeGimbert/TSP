@@ -1,3 +1,79 @@
-.html111 {
-    box-sizing: border-box;
+#page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+#pageHeading {
+  border: 1px solid black;
+}
+
+#selectRounds {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  border: 1px solid black;
+  width: 50%;
+  div {
+    display: flex;
+    width: 100%;
+    flex-flow: row nowrap;
+    justify-content: center;
+    border: 1px solid red;
+    button {
+      flex-basis: 110px;
+      margin: 0 20px;
+    }
   }
+}
+
+#gameScreen {
+  border: 1px solid black;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 50%;
+  .heading {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    width: 100%;
+    border: 1px solid black;
+    &__user {
+      border: 1px solid red;
+    }
+    &__scores {
+      border: 1px solid red;
+    }
+    &__computer {
+      border: 1px solid red;
+    }
+  }
+  
+  .round {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    width: 100%;
+    border: 1px solid black;
+    &__user {
+      border: 1px solid red;
+    }
+    &__computer {
+      border: 1px solid red;
+    }
+  }
+}
+
+#selectChoice {
+  display: flex;
+    width: 50%;
+    flex-flow: row nowrap;
+    justify-content: center;
+    border: 1px solid red;
+    button {
+      flex-basis: 110px;
+      margin: 0 20px;
+    }
+}
