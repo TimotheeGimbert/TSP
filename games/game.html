@@ -8,44 +8,16 @@
     <title>RockPaperScissors</title>
 </head>
 <body>
-    <div id="page">
+    <div id="container">
 
-        <section id="pageHeading">
-            <h1>HUMAN vs MACHINE | Game -:- Rock / Paper / Scissors</h1>
+        <h1 id="heading">HUMAN vs MACHINE | Rock - Paper - Scissors</h1>
+        
+        <button id="startButton">START A NEW GAME</button>
+
+        <section id="gameScreen">    
         </section>
 
-        <section id="selectRounds">
-            <p>Number of rounds per game</p>
-            <div>
-                <button>1</button>
-                <button>3</button>
-                <button>7</button>
-            </div>
-        </section>
-
-        <section id="gameScreen">
-            <div class="heading">
-                <div class="heading__user">USER</div>
-                <div class="heading__scores">SCORES</div>
-                <div class="heading__computer">COMPUTER</div>
-            </div>
-            <div class="round">
-                <div class="round__user">
-                    <h1>YOU</h1>
-                    <img src="./user.png" alt="">
-                </div>
-                <div class="round__computer">
-                    <h1>THE MACHINE</h1>
-                    <img src="./computer.png" alt="">
-                </div>
-            </div>
-            <div class="result">
-                <div class="result__user"></div> 
-                <div class="result__computer"></div>
-            </div>
-        </section>
-
-        <section id="selectChoice">
+        <section id="choices">
             <button>Rock</button>
             <button>Paper</button>
             <button>Scissors</button>

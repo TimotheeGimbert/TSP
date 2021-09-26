@@ -1,80 +1,39 @@
-#page {
+#container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  color: white;
+  background-color: black;
 }
-
-#pageHeading {
-  border: 1px solid black;
-}
-
-#selectRounds {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  border: 1px solid black;
+#container > * {
   width: 50%;
 }
-#selectRounds div {
-  display: flex;
-  width: 100%;
-  flex-flow: row nowrap;
-  justify-content: center;
-  border: 1px solid red;
+
+#heading {
+  padding: 100px 0;
+  border: 1px solid white;
+  text-align: center;
 }
-#selectRounds div button {
-  flex-basis: 110px;
-  margin: 0 20px;
+
+#startButton {
+  padding: 20px 220px;
+  margin-bottom: 20px;
 }
 
 #gameScreen {
-  border: 1px solid black;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  width: 50%;
-}
-#gameScreen .heading {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-evenly;
-  width: 100%;
-  border: 1px solid black;
-}
-#gameScreen .heading__user {
-  border: 1px solid red;
-}
-#gameScreen .heading__scores {
-  border: 1px solid red;
-}
-#gameScreen .heading__computer {
-  border: 1px solid red;
-}
-#gameScreen .round {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-evenly;
-  width: 100%;
-  border: 1px solid black;
-}
-#gameScreen .round__user {
-  border: 1px solid red;
-}
-#gameScreen .round__computer {
-  border: 1px solid red;
+  height: 300px;
+  border: 1px solid white;
 }
 
-#selectChoice {
+#choices {
   display: flex;
-  width: 50%;
-  flex-flow: row nowrap;
-  justify-content: center;
-  border: 1px solid red;
+  justify-content: space-evenly;
+  margin: 20px 0;
 }
-#selectChoice button {
-  flex-basis: 110px;
-  margin: 0 20px;
+#choices button {
+  flex-basis: 33%;
+  padding: 40px;
+  margin: 20px;
 }
 
 /*# sourceMappingURL=game.css.map */

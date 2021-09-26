@@ -6,6 +6,7 @@ const maxRounds = 10;
 const choices = ["ROCK", "PAPER", "SCISSORS"];
 let playerScore = 0;
 let computerScore = 0;
+let nRounds = 1;
 
 
 ///////////////
