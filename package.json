@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch scss:css",
+    "sassGame": "sass --watch ./games/_game.scss:./games/game.css",
     "prefix": "postcss ./css/main.css --use autoprefixer -d ./css/prefixed/"
   },
   "author": "",
