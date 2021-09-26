@@ -1,9 +1,14 @@
+body {
+  width: 100%;
+  margin: 0;
+  background-color: black;
+}
+
 #container {
   display: flex;
   flex-direction: column; 
   align-items: center;
   color: white;
-  background-color: black;
   > * {
     width: 50%;
   }
@@ -11,7 +16,6 @@
 
 #heading {
   padding: 100px 0;
-  border: 1px solid white;
   text-align: center;
 }
 
@@ -25,6 +29,7 @@
   border: 1px solid white;
   text-align: center;
   padding-top: 100px;
+  background-color: rgba(53, 50, 50, 0.712);
 }
 
 #choices {
